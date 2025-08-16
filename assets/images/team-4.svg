@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Background -->
+  <rect width="300" height="300" fill="#f5f5f5" />
+  
+  <!-- Professional Man Marketing Specialist Silhouette -->
+  <g transform="translate(75, 40)">
+    <!-- Head -->
+    <circle cx="75" cy="70" r="50" fill="#6c757d" />
+    
+    <!-- Hair -->
+    <path d="M 40 40 Q 40 20 75 20 Q 110 20 110 40 L 110 60 Q 90 55 75 60 Q 60 55 40 60 Z" fill="#8a6642" />
+    
+    <!-- Face -->
+    <ellipse cx="75" cy="75" rx="35" ry="40" fill="#f5d0a9" />
+    
+    <!-- Eyes -->
+    <ellipse cx="60" cy="70" rx="5" ry="3" fill="#333" />
+    <ellipse cx="90" cy="70" rx="5" ry="3" fill="#333" />
+    
+    <!-- Smile -->
+    <path d="M 60 90 Q 75 100 90 90" fill="none" stroke="#333" stroke-width="2" />
+    
+    <!-- Beard -->
+    <path d="M 60 95 Q 75 110 90 95" fill="#8a6642" />
+    
+    <!-- Neck -->
+    <rect x="65" y="115" width="20" height="15" fill="#f5d0a9" />
+    
+    <!-- Shoulders/Upper Body -->
+    <path d="M 30 140 L 65 130 L 85 130 L 120 140 L 120 200 L 30 200 Z" fill="#27ae60" />
+    
+    <!-- Marketing Elements -->
+    <circle cx="50" cy="160" r="8" fill="#e74c3c" />
+    <circle cx="75" cy="160" r="8" fill="#f1c40f" />
+    <circle cx="100" cy="160" r="8" fill="#3498db" />
+  </g>
+  
+  <!-- Light/Dark Mode Adaptability -->
+  <style>
+    @media (prefers-color-scheme: dark) {
+      rect[width="300"][height="300"] { fill: #2a2a2a; }
+    }
+  </style>
+</svg>

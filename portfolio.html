@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Cyber InfoSoft Corporation</title>
+  
+  <!-- Meta Description -->
+  <meta name="description" content="Explore our portfolio of custom websites, e-commerce solutions, and landing pages that have helped small businesses and startups achieve their online goals.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cyberinfosoft.com/portfolio.html">
+  <meta property="og:title" content="Portfolio - Cyber InfoSoft Corporation">
+  <meta property="og:description" content="View our showcase of successful web projects for small businesses and startups. From e-commerce to custom websites, see how we've helped clients achieve their goals.">
+  <meta property="og:image" content="https://cyberinfosoft.com/assets/images/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://cyberinfosoft.com/portfolio.html">
+  <meta property="twitter:title" content="Portfolio - Cyber InfoSoft Corporation">
+  <meta property="twitter:description" content="View our showcase of successful web projects for small businesses and startups. From e-commerce to custom websites, see how we've helped clients achieve their goals.">
+  <meta property="twitter:image" content="https://cyberinfosoft.com/assets/images/twitter-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Prevent Flash of Incorrect Theme -->
+  <script>
+    (function() {
+      // Immediately apply the saved theme to prevent flash
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  
+  <!-- Google Analytics Placeholder -->
+  <!-- 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+<img src="logo.jpg" alt="Cyber InfoSoft Corporation Logo">
+          <span>Cyber InfoSoft</span>
+        </a>
+        
+        <button class="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="quote.html" class="nav-cta">Get a Quote</a></li>
+        </ul>
+        
+        <button class="theme-toggle" aria-label="Toggle Dark Mode">
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon d-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="backdrop"></div>
+  
+  <!-- Page Header -->
+  <section class="page-header bg-light">
+    <div class="container text-center">
+      <h1 class="reveal">Our Portfolio</h1>
+      <p class="lead reveal">Showcasing our best work for small businesses and startups</p>
+    </div>
+  </section>
+  
+  <!-- Portfolio Filter -->
+  <section class="section">
+    <div class="container">
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+        <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+        <button class="filter-btn" data-filter="landing">Landing Pages</button>
+        <button class="filter-btn" data-filter="custom">Custom</button>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- E-commerce Project 1 -->
+        <div class="portfolio-item reveal" data-category="ecommerce">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-ecommerce-1.jpg" 
+                data-srcset="assets/images/portfolio-ecommerce-1-small.jpg 400w, assets/images/portfolio-ecommerce-1.jpg 800w" 
+                sizes="(max-width: 768px) 100vw, 50vw" 
+                alt="Artisan Crafts E-commerce Website" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-1" class="btn btn-sm btn-light portfolio-btn" data-project="project-1">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Artisan Crafts</h3>
+              <p>E-commerce website for handmade crafts and artisan products</p>
+              <div class="portfolio-tags">
+                <span class="tag">E-commerce</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">Custom Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Project 1 -->
+        <div class="portfolio-item reveal" data-category="portfolio">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-portfolio-1.jpg" 
+                data-srcset="assets/images/portfolio-portfolio-1-small.jpg 400w, assets/images/portfolio-portfolio-1.jpg 800w" 
+                sizes="(max-width: 768px) 100vw, 50vw" 
+                alt="Creative Studio Portfolio Website" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-2" class="btn btn-sm btn-light portfolio-btn" data-project="project-2">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Creative Studio</h3>
+              <p>Portfolio website for a graphic design and branding studio</p>
+              <div class="portfolio-tags">
+                <span class="tag">Portfolio</span>
+                <span class="tag">Animation</span>
+                <span class="tag">Gallery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Landing Page Project 1 -->
+        <div class="portfolio-item reveal" data-category="landing">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-landing-1.jpg" 
+                data-srcset="assets/images/portfolio-landing-1-small.jpg 400w, assets/images/portfolio-landing-1.jpg 800w" 
+                sizes="(max-width: 768px) 100vw, 50vw" 
+                alt="TechLaunch Product Landing Page" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-3" class="btn btn-sm btn-light portfolio-btn" data-project="project-3">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>TechLaunch</h3>
+              <p>Product launch landing page for a tech startup</p>
+              <div class="portfolio-tags">
+                <span class="tag">Landing Page</span>
+                <span class="tag">Conversion</span>
+                <span class="tag">Animation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Custom Project 1 -->
+        <div class="portfolio-item reveal" data-category="custom">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-custom-1.jpg" 
+                data-srcset="assets/images/portfolio-custom-1-small.jpg 400w, assets/images/portfolio-custom-1.jpg 800w" 
+                sizes="(max-width: 768px) 100vw, 50vw" 
+                alt="HealthTrack Web Application" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-4" class="btn btn-sm btn-light portfolio-btn" data-project="project-4">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>HealthTrack</h3>
+              <p>Custom web application for health and fitness tracking</p>
+              <div class="portfolio-tags">
+                <span class="tag">Custom</span>
+                <span class="tag">Web App</span>
+                <span class="tag">Dashboard</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- E-commerce Project 2 -->
+        <div class="portfolio-item reveal" data-category="ecommerce">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-ecommerce-2.jpg" 
+                data-srcset="assets/images/portfolio-ecommerce-2-small.jpg 400w, assets/images/portfolio-ecommerce-2.jpg 800w" 
+                sizes="(max-width: 768px) 100vw, 50vw" 
+                alt="Urban Threads Fashion E-commerce Website" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-5" class="btn btn-sm btn-light portfolio-btn" data-project="project-5">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Urban Threads</h3>
+              <p>E-commerce website for a boutique fashion brand</p>
+              <div class="portfolio-tags">
+                <span class="tag">E-commerce</span>
+                <span class="tag">Fashion</span>
+                <span class="tag">Mobile-First</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Project 2 -->
+        <div class="portfolio-item reveal" data-category="portfolio">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-portfolio-2.jpg" 
+                data-srcset="assets/images/portfolio-portfolio-2-small.jpg 400w, assets/images/portfolio-portfolio-2.jpg 800w" 
+                sizes="(max-width: 768px) 100vw, 50vw" 
+                alt="Architectural Firm Portfolio Website" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-6" class="btn btn-sm btn-light portfolio-btn" data-project="project-6">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Modern Spaces</h3>
+              <p>Portfolio website for an architectural design firm</p>
+              <div class="portfolio-tags">
+                <span class="tag">Portfolio</span>
+                <span class="tag">Architecture</span>
+                <span class="tag">Interactive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Landing Page Project 2 -->
+        <div class="portfolio-item reveal" data-category="landing">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-landing-2.jpg" 
+                data-srcset="assets/images/portfolio-landing-2-small.jpg 400w, assets/images/portfolio-landing-2.jpg 800w" 
+                sizes="(max-width: 768px) 100vw, 50vw" 
+                alt="EcoFriendly App Landing Page" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-7" class="btn btn-sm btn-light portfolio-btn" data-project="project-7">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>EcoFriendly</h3>
+              <p>App download landing page for an eco-conscious startup</p>
+              <div class="portfolio-tags">
+                <span class="tag">Landing Page</span>
+                <span class="tag">App</span>
+                <span class="tag">Lead Generation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Custom Project 2 -->
+        <div class="portfolio-item reveal" data-category="custom">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-custom-2.jpg" 
+                data-srcset="assets/images/portfolio-custom-2-small.jpg 400w, assets/images/portfolio-custom-2.jpg 800w" 
+                sizes="(max-width: 768px) 100vw, 50vw" 
+                alt="Educational Platform Website" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-8" class="btn btn-sm btn-light portfolio-btn" data-project="project-8">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>LearnHub</h3>
+              <p>Custom educational platform with course management</p>
+              <div class="portfolio-tags">
+                <span class="tag">Custom</span>
+                <span class="tag">Education</span>
+                <span class="tag">Platform</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Project Details Modals -->
+  <div class="project-details-container">
+    <!-- Project 1 Details -->
+    <div class="project-details" id="project-1">
+      <div class="project-details-content">
+        <button class="close-project" aria-label="Close Project Details">&times;</button>
+        <div class="project-header">
+          <h2>Artisan Crafts</h2>
+          <p class="project-category">E-commerce Website</p>
+        </div>
+        
+        <div class="project-gallery">
+          <img src="assets/images/portfolio-ecommerce-1-detail.jpg" alt="Artisan Crafts E-commerce Website" class="project-main-img">
+          <div class="project-gallery-thumbs">
+            <img src="assets/images/portfolio-ecommerce-1-thumb1.jpg" alt="Artisan Crafts Product Page">
+            <img src="assets/images/portfolio-ecommerce-1-thumb2.jpg" alt="Artisan Crafts Mobile View">
+            <img src="assets/images/portfolio-ecommerce-1-thumb3.jpg" alt="Artisan Crafts Checkout Process">
+          </div>
+        </div>
+        
+        <div class="project-info">
+          <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>Artisan Crafts needed an e-commerce platform to showcase and sell their handmade products. We created a visually appealing, user-friendly online store that highlights the craftsmanship of their items while providing a seamless shopping experience.</p>
+            
+            <h3>Challenge</h3>
+            <p>The main challenge was to create a website that would showcase the unique, handcrafted nature of the products while providing all the functionality of a modern e-commerce platform. The client also needed a simple way to manage inventory and process orders.</p>
+            
+            <h3>Solution</h3>
+            <p>We developed a custom e-commerce website with high-quality product photography, detailed product descriptions, and an intuitive shopping experience. The site includes advanced filtering options, a secure checkout process, and a robust inventory management system.</p>
+          </div>
+          
+          <div class="project-meta">
+            <div class="meta-item">
+              <h4>Client</h4>
+              <p>Artisan Crafts Co.</p>
+            </div>
+            
+            <div class="meta-item">
+              <h4>Timeline</h4>
+              <p>8 weeks</p>
+            </div>
+            
+            <div class="meta-item">
+              <h4>Services</h4>
+              <p>E-commerce Development, UI/UX Design, Product Photography, SEO</p>
+            </div>
+            
+            <div class="meta-item">
+              <h4>Technologies</h4>
+              <p>HTML5, CSS3, JavaScript, WooCommerce, WordPress</p>
+            </div>
+            
+            <div class="meta-item">
+              <h4>Results</h4>
+              <ul>
+                <li>43% increase in online sales</li>
+                <li>65% increase in average time on site</li>
+                <li>28% reduction in cart abandonment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project 2 Details -->
+    <div class="project-details" id="project-2">
+      <div class="project-details-content">
+        <button class="close-project" aria-label="Close Project Details">&times;</button>
+        <div class="project-header">
+          <h2>Creative Studio</h2>
+          <p class="project-category">Portfolio Website</p>
+        </div>
+        
+        <div class="project-gallery">
+          <img src="assets/images/portfolio-portfolio-1-detail.jpg" alt="Creative Studio Portfolio Website" class="project-main-img">
+          <div class="project-gallery-thumbs">
+            <img src="assets/images/portfolio-portfolio-1-thumb1.jpg" alt="Creative Studio Project Page">
+            <img src="assets/images/portfolio-portfolio-1-thumb2.jpg" alt="Creative Studio Mobile View">
+            <img src="assets/images/portfolio-portfolio-1-thumb3.jpg" alt="Creative Studio About Page">
+          </div>
+        </div>
+        
+        <div class="project-info">
+          <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>Creative Studio needed a portfolio website to showcase their graphic design and branding work. We created a visually stunning, interactive portfolio that highlights their creative projects and attracts potential clients.</p>
+            
+            <h3>Challenge</h3>
+            <p>The main challenge was to design a website that would reflect the client's creative expertise while ensuring that their work remained the focal point. The site needed to be visually impressive without overshadowing the portfolio pieces.</p>
+            
+            <h3>Solution</h3>
+            <p>We developed a minimalist yet impactful portfolio website with smooth animations, a filterable project gallery, and detailed project case studies. The design emphasizes the client's work through large imagery and clean typography, creating an immersive browsing experience.</p>
+          </div>
+          
+          <div class="project-meta">
+            <div class="meta-item">
+              <h4>Client</h4>
+              <p>Creative Studio Inc.</p>
+            </div>
+            
+            <div class="meta-item">
+              <h4>Timeline</h4>
+              <p>6 weeks</p>
+            </div>
+            
+            <div class="meta-item">
+              <h4>Services</h4>
+              <p>Web Design, Development, Animation, Content Strategy</p>
+            </div>
+            
+            <div class="meta-item">
+              <h4>Technologies</h4>
+              <p>HTML5, CSS3, JavaScript, GSAP, Intersection Observer</p>
+            </div>
+            
+            <div class="meta-item">
+              <h4>Results</h4>
+              <ul>
+                <li>52% increase in client inquiries</li>
+                <li>Featured in 3 design publications</li>
+                <li>35% increase in social media followers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Additional Project Details (3-8) would be similar in structure -->
+  </div>
+  
+  <!-- CTA Section -->
+  <section class="section cta bg-primary">
+    <div class="container text-center">
+      <h2 class="text-white reveal">Ready to Start Your Project?</h2>
+      <p class="text-white mb-4 reveal">Let's create a website that helps your business grow.</p>
+      <a href="quote.html" class="btn btn-lg btn-light reveal">Get a Free Quote</a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="footer-logo">
+<img src="logo.jpg" alt="Cyber InfoSoft Corporation Logo">
+            <span>Cyber InfoSoft</span>
+          </div>
+          <p class="footer-text">We build custom websites that help small businesses and startups succeed online.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="index.html">Home</a></li>
+            <li class="footer-link"><a href="about.html">About Us</a></li>
+            <li class="footer-link"><a href="services.html">Services</a></li>
+            <li class="footer-link"><a href="portfolio.html">Portfolio</a></li>
+            <li class="footer-link"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="services.html#website-development">Website Development</a></li>
+            <li class="footer-link"><a href="services.html#ecommerce">E-commerce Websites</a></li>
+            <li class="footer-link"><a href="services.html#portfolio-sites">Portfolio Sites</a></li>
+            <li class="footer-link"><a href="services.html#landing-pages">Landing Pages</a></li>
+            <li class="footer-link"><a href="services.html#maintenance">Website Maintenance</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4 col-md-4">
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="footer-text">Subscribe to our newsletter for the latest news and insights.</p>
+          <form class="newsletter-form">
+            <input type="email" class="form-control newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2023 Cyber InfoSoft Corporation. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# robots.txt for Cyber InfoSoft Corporation
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://cyberinfosoft.com/sitemap.xml

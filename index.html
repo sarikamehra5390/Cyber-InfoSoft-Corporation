@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber InfoSoft Corporation - Custom Websites for Small Businesses</title>
+  
+  <!-- Meta Description -->
+  <meta name="description" content="Cyber InfoSoft Corporation builds conversion-ready websites for small businesses and startups. We create custom, responsive, and high-performing websites that drive results.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cyberinfosoft.com/">
+  <meta property="og:title" content="Cyber InfoSoft Corporation - Custom Websites for Small Businesses">
+  <meta property="og:description" content="We build conversion-ready websites for small businesses and startups. Get a custom website that drives results.">
+  <meta property="og:image" content="https://cyberinfosoft.com/assets/images/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://cyberinfosoft.com/">
+  <meta property="twitter:title" content="Cyber InfoSoft Corporation - Custom Websites for Small Businesses">
+  <meta property="twitter:description" content="We build conversion-ready websites for small businesses and startups. Get a custom website that drives results.">
+  <meta property="twitter:image" content="https://cyberinfosoft.com/assets/images/twitter-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Prevent Flash of Incorrect Theme -->
+  <script>
+    (function() {
+      // Immediately apply the saved theme to prevent flash
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  
+  <!-- Google Analytics Placeholder -->
+  <!-- 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  -->
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="logo.jpg" alt="Cyber InfoSoft Corporation Logo">
+          <span>Cyber InfoSoft</span>
+        </a>
+        
+        <button class="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="quote.html" class="nav-cta">Get a Quote</a></li>
+        </ul>
+        
+        <button class="theme-toggle" aria-label="Toggle Dark Mode">
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon d-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="backdrop"></div>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 hero-content reveal">
+          <h1 class="hero-title">We build conversion-ready websites for small businesses & startups.</h1>
+          <p class="hero-subtitle">Custom web solutions designed to grow your business, increase conversions, and deliver exceptional user experiences.</p>
+          <div class="hero-cta">
+            <a href="quote.html" class="btn btn-primary btn-lg">Start Your Project</a>
+            <a href="portfolio.html" class="btn btn-outline btn-lg">View Our Work</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/hero-image.svg" alt="Web Development Illustration" class="hero-image reveal" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Trust Badges Section -->
+  <section class="section-sm bg-light">
+    <div class="container">
+      <div class="trust-badges">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-6 col-md-2 text-center mb-4 mb-md-0 reveal">
+            <img src="assets/logos/client-1.svg" alt="Trusted Client" class="trust-badge">
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4 mb-md-0 reveal">
+            <img src="assets/logos/client-2.svg" alt="Trusted Client" class="trust-badge">
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4 mb-md-0 reveal">
+            <img src="assets/logos/client-3.svg" alt="Trusted Client" class="trust-badge">
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4 mb-md-0 reveal">
+            <img src="assets/logos/client-4.svg" alt="Trusted Client" class="trust-badge">
+          </div>
+          <div class="col-6 col-md-2 text-center reveal">
+            <img src="assets/logos/client-5.svg" alt="Trusted Client" class="trust-badge">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="section features">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="reveal">Why Choose Cyber InfoSoft?</h2>
+        <p class="reveal">We deliver websites that are not just beautiful, but also drive real business results.</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card h-100 reveal">
+            <div class="card-body text-center">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="feature-title">Responsive Design</h3>
+              <p>Your website will look perfect on all devices, from smartphones to desktops, ensuring you never lose a visitor.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card h-100 reveal">
+            <div class="card-body text-center">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Custom Design</h3>
+              <p>We create unique designs tailored to your brand identity, ensuring your website stands out from the competition.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 reveal">
+            <div class="card-body text-center">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">Performance Optimized</h3>
+              <p>Fast-loading websites that keep visitors engaged and improve your search engine rankings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- How We Work Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="reveal">How We Work</h2>
+        <p class="reveal">Our proven process ensures your project is completed on time, on budget, and exceeds expectations.</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="card h-100 reveal">
+            <div class="card-body text-center">
+              <div class="process-number">1</div>
+              <h3 class="feature-title">Discover</h3>
+              <p>We learn about your business, goals, target audience, and competitors to create a strategic plan.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="card h-100 reveal">
+            <div class="card-body text-center">
+              <div class="process-number">2</div>
+              <h3 class="feature-title">Design</h3>
+              <p>We create wireframes and visual designs that align with your brand and business objectives.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="card h-100 reveal">
+            <div class="card-body text-center">
+              <div class="process-number">3</div>
+              <h3 class="feature-title">Build</h3>
+              <p>Our developers bring the designs to life with clean, efficient, and maintainable code.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="card h-100 reveal">
+            <div class="card-body text-center">
+              <div class="process-number">4</div>
+              <h3 class="feature-title">Launch</h3>
+              <p>After thorough testing, we deploy your website and provide training on how to manage it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Featured Projects Section -->
+  <section class="section portfolio">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="reveal">Featured Projects</h2>
+        <p class="reveal">Take a look at some of our recent work that has helped businesses grow.</p>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card portfolio-card reveal">
+            <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-1.svg" 
+                alt="E-commerce Website" 
+                class="card-img lazy" 
+                loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">Mountain Gear Shop</h3>
+              <p class="card-text">E-commerce website with 200% increase in online sales after launch.</p>
+              <div class="portfolio-tags">
+                <span class="badge">E-commerce</span>
+                <span class="badge">Responsive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="card portfolio-card reveal">
+            <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-2.svg" 
+                alt="Portfolio Website" 
+                class="card-img lazy" 
+                loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">Creative Studio Portfolio</h3>
+              <p class="card-text">Portfolio site that helped the client secure 5 major contracts.</p>
+              <div class="portfolio-tags">
+                <span class="badge">Portfolio</span>
+                <span class="badge">Animation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="card portfolio-card reveal">
+            <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-3.svg" 
+                alt="Landing Page" 
+                class="card-img lazy" 
+                loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">SaaS Product Launch</h3>
+              <p class="card-text">Landing page with 15% conversion rate for a new software product.</p>
+              <div class="portfolio-tags">
+                <span class="badge">Landing Page</span>
+                <span class="badge">Conversion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <a href="portfolio.html" class="btn btn-outline">View All Projects</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section class="section testimonials bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="reveal">What Our Clients Say</h2>
+        <p class="reveal">Don't just take our word for it - hear from some of our satisfied clients.</p>
+      </div>
+      
+      <div class="testimonial-slider reveal">
+        <div class="testimonial active">
+          <div class="testimonial-text">
+            Cyber InfoSoft transformed our online presence. Our new website not only looks great but has significantly increased our leads and conversions. Their team was professional, responsive, and delivered exactly what we needed.
+          </div>
+          <div class="testimonial-author">Sarah Johnson</div>
+          <div class="testimonial-role">CEO, Mountain Gear Shop</div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-text">
+            Working with Cyber InfoSoft was a game-changer for our startup. They understood our vision and created a website that perfectly represents our brand. The process was smooth, and they were always available to answer our questions.
+          </div>
+          <div class="testimonial-author">Michael Chen</div>
+          <div class="testimonial-role">Founder, TechStart Solutions</div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-text">
+            I was impressed by Cyber InfoSoft's attention to detail and commitment to quality. They didn't just build a website; they created a powerful marketing tool that has helped us reach new customers and grow our business.
+          </div>
+          <div class="testimonial-author">Emily Rodriguez</div>
+          <div class="testimonial-role">Marketing Director, Bright Ideas Consulting</div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-text">
+            The team at Cyber InfoSoft exceeded all our expectations. They took the time to understand our business needs and delivered a website that not only looks beautiful but also drives results. Their ongoing support has been exceptional.
+          </div>
+          <div class="testimonial-author">David Thompson</div>
+          <div class="testimonial-role">Operations Manager, Global Logistics Inc.</div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-text">
+            Choosing Cyber InfoSoft for our website redesign was the best decision we made. Their expertise in both design and development resulted in a site that's not only visually stunning but also performs exceptionally well. Our conversion rates have increased by 45% since launch.
+          </div>
+          <div class="testimonial-author">Jennifer Lee</div>
+          <div class="testimonial-role">Digital Marketing Lead, Innovate Solutions</div>
+        </div>
+        
+        <div class="slider-controls">
+          <button class="slider-prev" aria-label="Previous testimonial">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <div class="slider-indicators">
+            <button class="slider-indicator active" aria-label="Go to testimonial 1"></button>
+            <button class="slider-indicator" aria-label="Go to testimonial 2"></button>
+            <button class="slider-indicator" aria-label="Go to testimonial 3"></button>
+            <button class="slider-indicator" aria-label="Go to testimonial 4"></button>
+            <button class="slider-indicator" aria-label="Go to testimonial 5"></button>
+          </div>
+          <button class="slider-next" aria-label="Next testimonial">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="section cta bg-primary">
+    <div class="container text-center">
+      <h2 class="text-white reveal">Ready to Start Your Project?</h2>
+      <p class="text-white mb-4 reveal">Let's create a website that helps your business grow.</p>
+      <a href="quote.html" class="btn btn-lg btn-light reveal">Get a Free Quote</a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="footer-logo">
+            <img src="logo.jpg" alt="Cyber InfoSoft Corporation Logo">
+            <span>Cyber InfoSoft</span>
+          </div>
+          <p class="footer-text">We build custom websites that help small businesses and startups succeed online.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="index.html">Home</a></li>
+            <li class="footer-link"><a href="about.html">About Us</a></li>
+            <li class="footer-link"><a href="services.html">Services</a></li>
+            <li class="footer-link"><a href="portfolio.html">Portfolio</a></li>
+            <li class="footer-link"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="services.html#website-development">Website Development</a></li>
+            <li class="footer-link"><a href="services.html#ecommerce">E-commerce Websites</a></li>
+            <li class="footer-link"><a href="services.html#portfolio-sites">Portfolio Sites</a></li>
+            <li class="footer-link"><a href="services.html#landing-pages">Landing Pages</a></li>
+            <li class="footer-link"><a href="services.html#maintenance">Website Maintenance</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4 col-md-4">
+          <h4 class="footer-title">Newsletter</h4>
+          <p class="footer-text">Subscribe to our newsletter for the latest news and insights.</p>
+          <form class="newsletter-form">
+            <input type="email" class="form-control newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2023 Cyber InfoSoft Corporation. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

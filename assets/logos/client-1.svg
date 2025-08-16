@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewBox="0 0 150 50">
+  <style>
+    .logo-text { font-family: Arial, sans-serif; font-weight: bold; }
+    .dark-theme { fill: #E2E8F0; }
+    .light-theme { fill: #2D3748; }
+  </style>
+  
+  <rect width="150" height="50" fill="none"/>
+  
+  <!-- Company Logo: TechNova -->
+  <g>
+    <path class="light-theme dark-theme" d="M30,15 L45,15 L40,35 L35,35 Z" />
+    <text x="55" y="30" class="logo-text light-theme dark-theme" font-size="16">TechNova</text>
+  </g>
+</svg>

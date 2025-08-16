@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewBox="0 0 150 50">
+  <style>
+    .logo-text { font-family: Arial, sans-serif; font-weight: bold; }
+    .dark-theme { fill: #E2E8F0; }
+    .light-theme { fill: #2D3748; }
+  </style>
+  
+  <rect width="150" height="50" fill="none"/>
+  
+  <!-- Company Logo: EcoSmart -->
+  <g>
+    <path class="light-theme dark-theme" d="M30,15 C25,15 20,20 20,25 C20,30 25,35 30,35 C35,35 40,30 40,25 L30,25 Z" />
+    <text x="45" y="30" class="logo-text light-theme dark-theme" font-size="16">EcoSmart</text>
+  </g>
+</svg>

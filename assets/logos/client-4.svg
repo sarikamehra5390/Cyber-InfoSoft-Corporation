@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewBox="0 0 150 50">
+  <style>
+    .logo-text { font-family: Arial, sans-serif; font-weight: bold; }
+    .dark-theme { fill: #E2E8F0; }
+    .light-theme { fill: #2D3748; }
+  </style>
+  
+  <rect width="150" height="50" fill="none"/>
+  
+  <!-- Company Logo: Fusion Media -->
+  <g>
+    <rect x="20" y="15" width="20" height="20" rx="5" class="light-theme dark-theme" />
+    <text x="45" y="30" class="logo-text light-theme dark-theme" font-size="16">Fusion Media</text>
+  </g>
+</svg>

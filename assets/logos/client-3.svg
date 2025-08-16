@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewBox="0 0 150 50">
+  <style>
+    .logo-text { font-family: Arial, sans-serif; font-weight: bold; }
+    .dark-theme { fill: #E2E8F0; }
+    .light-theme { fill: #2D3748; }
+  </style>
+  
+  <rect width="150" height="50" fill="none"/>
+  
+  <!-- Company Logo: Apex Solutions -->
+  <g>
+    <polygon class="light-theme dark-theme" points="25,15 35,15 40,25 35,35 25,35 20,25" />
+    <text x="45" y="30" class="logo-text light-theme dark-theme" font-size="14">Apex Solutions</text>
+  </g>
+</svg>
