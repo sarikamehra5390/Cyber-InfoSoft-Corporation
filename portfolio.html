@@ -6,20 +6,20 @@
   <title>Portfolio - Cyber InfoSoft Corporation</title>
   
   <!-- Meta Description -->
-  <meta name="description" content="Explore our portfolio of custom websites, e-commerce solutions, and landing pages that have helped small businesses and startups achieve their online goals.">
+  <meta name="description" content="Explore our portfolio of custom apps, games, websites, and digital solutions that have helped businesses of all sizes achieve their digital goals.">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cyberinfosoft.com/portfolio.html">
   <meta property="og:title" content="Portfolio - Cyber InfoSoft Corporation">
-  <meta property="og:description" content="View our showcase of successful web projects for small businesses and startups. From e-commerce to custom websites, see how we've helped clients achieve their goals.">
+  <meta property="og:description" content="View our showcase of successful digital projects for businesses of all sizes. From mobile apps and games to websites and custom solutions, see how we've helped clients achieve their goals.">
   <meta property="og:image" content="https://cyberinfosoft.com/assets/images/og-image.jpg">
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://cyberinfosoft.com/portfolio.html">
   <meta property="twitter:title" content="Portfolio - Cyber InfoSoft Corporation">
-  <meta property="twitter:description" content="View our showcase of successful web projects for small businesses and startups. From e-commerce to custom websites, see how we've helped clients achieve their goals.">
+  <meta property="twitter:description" content="View our showcase of successful digital projects for businesses of all sizes. From mobile apps and games to websites and custom solutions, see how we've helped clients achieve their goals.">
   <meta property="twitter:image" content="https://cyberinfosoft.com/assets/images/twitter-image.jpg">
   
   <!-- Favicon -->
@@ -79,7 +79,15 @@
         
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item dropdown">
+            <a href="services.html" class="nav-link">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html#app-development" class="dropdown-item">App Development</a></li>
+              <li><a href="services.html#game-development" class="dropdown-item">Game Development</a></li>
+              <li><a href="services.html#website-development" class="dropdown-item">Website Development</a></li>
+              <li><a href="services.html#custom-solutions" class="dropdown-item">Custom Solutions</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
           <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -112,7 +120,7 @@
   <section class="page-header bg-light">
     <div class="container text-center">
       <h1 class="reveal">Our Portfolio</h1>
-      <p class="lead reveal">Showcasing our best work for small businesses and startups</p>
+      <p class="lead reveal">Showcasing our best work in apps, games, and websites</p>
     </div>
   </section>
   
@@ -121,15 +129,15 @@
     <div class="container">
       <div class="portfolio-filters reveal">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
-        <button class="filter-btn" data-filter="portfolio">Portfolio</button>
-        <button class="filter-btn" data-filter="landing">Landing Pages</button>
-        <button class="filter-btn" data-filter="custom">Custom</button>
+        <button class="filter-btn" data-filter="apps">Apps</button>
+        <button class="filter-btn" data-filter="games">Games</button>
+        <button class="filter-btn" data-filter="websites">Websites</button>
+        <button class="filter-btn" data-filter="custom">Custom Solutions</button>
       </div>
       
       <div class="portfolio-grid">
-        <!-- E-commerce Project 1 -->
-        <div class="portfolio-item reveal" data-category="ecommerce">
+        <!-- App Project 1 -->
+        <div class="portfolio-item reveal" data-category="apps">
           <div class="portfolio-card">
             <div class="portfolio-img">
               <img 
@@ -137,7 +145,7 @@
                 data-src="assets/images/portfolio-ecommerce-1.jpg" 
                 data-srcset="assets/images/portfolio-ecommerce-1-small.jpg 400w, assets/images/portfolio-ecommerce-1.jpg 800w" 
                 sizes="(max-width: 768px) 100vw, 50vw" 
-                alt="Artisan Crafts E-commerce Website" 
+                alt="FitTrack Pro Mobile App" 
                 class="lazy" 
                 loading="lazy">
               <div class="portfolio-overlay">
@@ -145,19 +153,19 @@
               </div>
             </div>
             <div class="portfolio-content">
-              <h3>Artisan Crafts</h3>
-              <p>E-commerce website for handmade crafts and artisan products</p>
+              <h3>FitTrack Pro</h3>
+              <p>Fitness tracking mobile app with personalized workout plans</p>
               <div class="portfolio-tags">
-                <span class="tag">E-commerce</span>
-                <span class="tag">Responsive</span>
-                <span class="tag">Custom Design</span>
+                <span class="tag">Mobile App</span>
+                <span class="tag">iOS & Android</span>
+                <span class="tag">Health & Fitness</span>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- Portfolio Project 1 -->
-        <div class="portfolio-item reveal" data-category="portfolio">
+        <!-- Game Project 1 -->
+        <div class="portfolio-item reveal" data-category="games">
           <div class="portfolio-card">
             <div class="portfolio-img">
               <img 
@@ -165,7 +173,7 @@
                 data-src="assets/images/portfolio-portfolio-1.jpg" 
                 data-srcset="assets/images/portfolio-portfolio-1-small.jpg 400w, assets/images/portfolio-portfolio-1.jpg 800w" 
                 sizes="(max-width: 768px) 100vw, 50vw" 
-                alt="Creative Studio Portfolio Website" 
+                alt="Puzzle Quest Adventures Game" 
                 class="lazy" 
                 loading="lazy">
               <div class="portfolio-overlay">
@@ -173,19 +181,19 @@
               </div>
             </div>
             <div class="portfolio-content">
-              <h3>Creative Studio</h3>
-              <p>Portfolio website for a graphic design and branding studio</p>
+              <h3>Puzzle Quest Adventures</h3>
+              <p>Engaging puzzle game with adventure elements for mobile platforms</p>
               <div class="portfolio-tags">
-                <span class="tag">Portfolio</span>
-                <span class="tag">Animation</span>
-                <span class="tag">Gallery</span>
+                <span class="tag">Mobile Game</span>
+                <span class="tag">Unity Engine</span>
+                <span class="tag">Puzzle</span>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- Landing Page Project 1 -->
-        <div class="portfolio-item reveal" data-category="landing">
+        <!-- Website Project 1 -->
+        <div class="portfolio-item reveal" data-category="websites">
           <div class="portfolio-card">
             <div class="portfolio-img">
               <img 
@@ -193,7 +201,7 @@
                 data-src="assets/images/portfolio-landing-1.jpg" 
                 data-srcset="assets/images/portfolio-landing-1-small.jpg 400w, assets/images/portfolio-landing-1.jpg 800w" 
                 sizes="(max-width: 768px) 100vw, 50vw" 
-                alt="TechLaunch Product Landing Page" 
+                alt="Mountain Gear Shop E-commerce Website" 
                 class="lazy" 
                 loading="lazy">
               <div class="portfolio-overlay">
@@ -201,12 +209,12 @@
               </div>
             </div>
             <div class="portfolio-content">
-              <h3>TechLaunch</h3>
-              <p>Product launch landing page for a tech startup</p>
+              <h3>Mountain Gear Shop</h3>
+              <p>E-commerce website for outdoor equipment and adventure gear</p>
               <div class="portfolio-tags">
-                <span class="tag">Landing Page</span>
-                <span class="tag">Conversion</span>
-                <span class="tag">Animation</span>
+                <span class="tag">Website</span>
+                <span class="tag">E-commerce</span>
+                <span class="tag">Responsive</span>
               </div>
             </div>
           </div>
@@ -492,7 +500,7 @@
   <section class="section cta bg-primary">
     <div class="container text-center">
       <h2 class="text-white reveal">Ready to Start Your Project?</h2>
-      <p class="text-white mb-4 reveal">Let's create a website that helps your business grow.</p>
+      <p class="text-white mb-4 reveal">Let's create a digital solution that helps your business grow.</p>
       <a href="quote.html" class="btn btn-lg btn-light reveal">Get a Free Quote</a>
     </div>
   </section>
@@ -506,7 +514,7 @@
 <img src="logo.jpg" alt="Cyber InfoSoft Corporation Logo">
             <span>Cyber InfoSoft</span>
           </div>
-          <p class="footer-text">We build custom websites that help small businesses and startups succeed online.</p>
+          <p class="footer-text">We build custom apps, games, and websites that help businesses of all sizes succeed in the digital world.</p>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -549,11 +557,11 @@
         <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
           <h4 class="footer-title">Services</h4>
           <ul class="footer-links">
+            <li class="footer-link"><a href="services.html#app-development">App Development</a></li>
+            <li class="footer-link"><a href="services.html#game-development">Game Development</a></li>
             <li class="footer-link"><a href="services.html#website-development">Website Development</a></li>
-            <li class="footer-link"><a href="services.html#ecommerce">E-commerce Websites</a></li>
-            <li class="footer-link"><a href="services.html#portfolio-sites">Portfolio Sites</a></li>
-            <li class="footer-link"><a href="services.html#landing-pages">Landing Pages</a></li>
-            <li class="footer-link"><a href="services.html#maintenance">Website Maintenance</a></li>
+            <li class="footer-link"><a href="services.html#custom-solutions">Custom Solutions</a></li>
+            <li class="footer-link"><a href="services.html#maintenance">Maintenance & Support</a></li>
           </ul>
         </div>
         

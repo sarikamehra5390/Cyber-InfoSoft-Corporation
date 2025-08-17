@@ -6,20 +6,20 @@
   <title>Request a Quote - Cyber InfoSoft Corporation</title>
   
   <!-- Meta Description -->
-  <meta name="description" content="Request a quote for your web development project. Get a custom website for your small business or startup from Cyber InfoSoft Corporation.">
+  <meta name="description" content="Request a quote for your digital project. Get a custom app, game, website, or digital solution for your business from Cyber InfoSoft Corporation.">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cyberinfosoft.com/quote.html">
   <meta property="og:title" content="Request a Quote - Cyber InfoSoft Corporation">
-  <meta property="og:description" content="Request a quote for your web development project. Get a custom website for your small business or startup from Cyber InfoSoft Corporation.">
+  <meta property="og:description" content="Request a quote for your digital project. Get a custom app, game, website, or digital solution for your business from Cyber InfoSoft Corporation.">
   <meta property="og:image" content="https://cyberinfosoft.com/assets/images/og-image.jpg">
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://cyberinfosoft.com/quote.html">
   <meta property="twitter:title" content="Request a Quote - Cyber InfoSoft Corporation">
-  <meta property="twitter:description" content="Request a quote for your web development project. Get a custom website for your small business or startup from Cyber InfoSoft Corporation.">
+  <meta property="twitter:description" content="Request a quote for your digital project. Get a custom app, game, website, or digital solution for your business from Cyber InfoSoft Corporation.">
   <meta property="twitter:image" content="https://cyberinfosoft.com/assets/images/twitter-image.jpg">
   
   <!-- Favicon -->
@@ -79,7 +79,15 @@
         
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item dropdown">
+            <a href="services.html" class="nav-link">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html#app-development" class="dropdown-item">App Development</a></li>
+              <li><a href="services.html#game-development" class="dropdown-item">Game Development</a></li>
+              <li><a href="services.html#website-development" class="dropdown-item">Website Development</a></li>
+              <li><a href="services.html#custom-solutions" class="dropdown-item">Custom Solutions</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
           <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -211,26 +219,26 @@
           <!-- Step 2: Project Details -->
           <div class="form-step" data-step="2">
             <h2>Project Details</h2>
-            <p class="mb-4">Tell us what type of website you need and its purpose.</p>
+            <p class="mb-4">Tell us what type of digital solution you need and its purpose.</p>
             
             <div class="form-group">
               <label>Project Type <span class="required">*</span></label>
               <div class="checkbox-group">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="project-type" id="type-business" value="business-website" required>
-                  <label class="form-check-label" for="type-business">Business Website</label>
+                  <input class="form-check-input" type="radio" name="project-type" id="type-app" value="mobile-app" required>
+                  <label class="form-check-label" for="type-app">Mobile App</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="project-type" id="type-ecommerce" value="ecommerce-website">
-                  <label class="form-check-label" for="type-ecommerce">E-commerce Website</label>
+                  <input class="form-check-input" type="radio" name="project-type" id="type-game" value="game-development">
+                  <label class="form-check-label" for="type-game">Game Development</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="project-type" id="type-portfolio" value="portfolio-website">
-                  <label class="form-check-label" for="type-portfolio">Portfolio Website</label>
+                  <input class="form-check-input" type="radio" name="project-type" id="type-website" value="website-development">
+                  <label class="form-check-label" for="type-website">Website Development</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="project-type" id="type-landing" value="landing-page">
-                  <label class="form-check-label" for="type-landing">Landing Page</label>
+                  <input class="form-check-input" type="radio" name="project-type" id="type-custom" value="custom-solution">
+                  <label class="form-check-label" for="type-custom">Custom Digital Solution</label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="project-type" id="type-other" value="other">
@@ -242,17 +250,56 @@
             
             <div class="form-group">
               <label for="project-description">Project Description <span class="required">*</span></label>
-              <textarea id="project-description" name="project-description" class="form-control" rows="4" required placeholder="Describe your project goals and what you want to achieve with your website"></textarea>
+              <textarea id="project-description" name="project-description" class="form-control" rows="4" required placeholder="Describe your project goals and what you want to achieve with your app, game, website, or custom solution"></textarea>
               <div class="invalid-feedback">Please describe your project</div>
             </div>
             
             <div class="form-group">
               <label>Required Features <span class="required">*</span></label>
               <div class="checkbox-group">
+                <!-- Common Features -->
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" name="features[]" id="feature-responsive" value="responsive-design">
                   <label class="form-check-label" for="feature-responsive">Responsive Design</label>
                 </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-analytics" value="analytics">
+                  <label class="form-check-label" for="feature-analytics">Analytics Integration</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-social" value="social-media-integration">
+                  <label class="form-check-label" for="feature-social">Social Media Integration</label>
+                </div>
+                
+                <!-- App Features -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-offline" value="offline-functionality">
+                  <label class="form-check-label" for="feature-offline">Offline Functionality</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-push" value="push-notifications">
+                  <label class="form-check-label" for="feature-push">Push Notifications</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-auth" value="user-authentication">
+                  <label class="form-check-label" for="feature-auth">User Authentication</label>
+                </div>
+                
+                <!-- Game Features -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-multiplayer" value="multiplayer">
+                  <label class="form-check-label" for="feature-multiplayer">Multiplayer Support</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-leaderboard" value="leaderboard">
+                  <label class="form-check-label" for="feature-leaderboard">Leaderboards</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-iap" value="in-app-purchases">
+                  <label class="form-check-label" for="feature-iap">In-App Purchases</label>
+                </div>
+                
+                <!-- Website Features -->
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" name="features[]" id="feature-cms" value="content-management">
                   <label class="form-check-label" for="feature-cms">Content Management System</label>
@@ -262,29 +309,11 @@
                   <label class="form-check-label" for="feature-ecommerce">E-commerce Functionality</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-blog" value="blog">
-                  <label class="form-check-label" for="feature-blog">Blog</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-contact" value="contact-form">
-                  <label class="form-check-label" for="feature-contact">Contact Form</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-gallery" value="image-gallery">
-                  <label class="form-check-label" for="feature-gallery">Image Gallery</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-social" value="social-media-integration">
-                  <label class="form-check-label" for="feature-social">Social Media Integration</label>
-                </div>
-                <div class="form-check">
                   <input class="form-check-input" type="checkbox" name="features[]" id="feature-seo" value="seo-optimization">
                   <label class="form-check-label" for="feature-seo">SEO Optimization</label>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="features[]" id="feature-analytics" value="analytics">
-                  <label class="form-check-label" for="feature-analytics">Analytics Integration</label>
-                </div>
+                
+                <!-- Other -->
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" name="features[]" id="feature-other" value="other">
                   <label class="form-check-label" for="feature-other">Other</label>
@@ -352,13 +381,13 @@
             <p class="mb-4">Provide any other details that will help us understand your project better.</p>
             
             <div class="form-group">
-              <label for="reference-sites">Reference Websites</label>
-              <textarea id="reference-sites" name="reference-sites" class="form-control" rows="2" placeholder="List any websites you like or want to use as inspiration"></textarea>
+              <label for="reference-sites">Reference Examples</label>
+              <textarea id="reference-sites" name="reference-sites" class="form-control" rows="2" placeholder="List any apps, games, websites, or digital products you like or want to use as inspiration"></textarea>
             </div>
             
             <div class="form-group">
               <label for="additional-info">Additional Information</label>
-              <textarea id="additional-info" name="additional-info" class="form-control" rows="4" placeholder="Any other details you'd like to share about your project"></textarea>
+              <textarea id="additional-info" name="additional-info" class="form-control" rows="4" placeholder="Any other details you'd like to share about your app, game, website, or custom digital solution"></textarea>
             </div>
             
             <div class="form-group">
@@ -413,7 +442,7 @@
       <div class="faq-container">
         <div class="faq-item reveal">
           <div class="faq-question">
-            <h3>How long does it take to build a website?</h3>
+            <h3>How long does it take to develop a digital product?</h3>
             <span class="faq-toggle">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -422,7 +451,7 @@
             </span>
           </div>
           <div class="faq-answer">
-            <p>The timeline for website development varies based on complexity and scope. A simple informational website might take 2-4 weeks, while a complex e-commerce site could take 8-12 weeks or more. During our initial consultation, we'll provide a more accurate timeline based on your specific requirements.</p>
+            <p>Development timelines vary based on the type and complexity of your project. Mobile apps typically take 3-6 months, games can range from 4-12 months depending on complexity, and websites from 2-12 weeks. During our initial consultation, we'll provide a more accurate timeline based on your specific requirements and the platforms you're targeting.</p>
           </div>
         </div>
         
@@ -437,13 +466,13 @@
             </span>
           </div>
           <div class="faq-answer">
-            <p>To provide an accurate quote, we need to understand your business, project goals, desired features, timeline, and budget constraints. The more details you can provide in this form, the more precise our estimate will be. After reviewing your submission, we may schedule a call to discuss specific requirements in more depth.</p>
+            <p>To provide an accurate quote, we need to understand your business, project type (app, game, website, or custom solution), target platforms, desired features, timeline, and budget constraints. The more details you can provide in this form, the more precise our estimate will be. After reviewing your submission, we may schedule a call to discuss specific requirements in more depth.</p>
           </div>
         </div>
         
         <div class="faq-item reveal">
           <div class="faq-question">
-            <h3>Do you offer website maintenance services?</h3>
+            <h3>Do you offer maintenance and support services?</h3>
             <span class="faq-toggle">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -452,7 +481,7 @@
             </span>
           </div>
           <div class="faq-answer">
-            <p>Yes, we offer comprehensive website maintenance packages to keep your site secure, up-to-date, and performing optimally. Our maintenance services include regular updates, security monitoring, performance optimization, content updates, and technical support. We can customize a maintenance plan based on your specific needs.</p>
+            <p>Yes, we offer comprehensive maintenance and support packages for all our digital products. For apps and games, we provide version updates, bug fixes, platform compatibility updates, and feature enhancements. For websites, our services include security monitoring, performance optimization, content updates, and technical support. We can customize a maintenance plan based on your specific product and needs.</p>
           </div>
         </div>
         
@@ -467,13 +496,13 @@
             </span>
           </div>
           <div class="faq-answer">
-            <p>Our standard payment structure is 50% upfront to begin the project and the remaining 50% upon completion before the website goes live. For larger projects, we may establish a milestone-based payment schedule. We accept payments via bank transfer, credit card, and PayPal.</p>
+            <p>Our payment structure varies by project type and complexity. For websites, we typically require 50% upfront and 50% upon completion. For apps and games, we use a milestone-based payment schedule with an initial deposit, payments at key development stages, and final payment upon release. For all projects, we accept payments via bank transfer, credit card, and PayPal.</p>
           </div>
         </div>
         
         <div class="faq-item reveal">
           <div class="faq-question">
-            <h3>Do you provide hosting services?</h3>
+            <h3>Do you handle deployment and distribution?</h3>
             <span class="faq-toggle">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -482,7 +511,7 @@
             </span>
           </div>
           <div class="faq-answer">
-            <p>Yes, we offer reliable hosting solutions tailored to your website's needs. Our hosting packages include regular backups, security monitoring, and technical support. If you already have a preferred hosting provider, we can also work with them to deploy your website.</p>
+            <p>Yes, we handle all aspects of deployment and distribution for your digital products. For websites, we offer reliable hosting solutions with regular backups and security monitoring. For mobile apps, we manage submissions to the Apple App Store and Google Play Store. For games, we handle distribution on platforms like Steam, Epic Games Store, or mobile app stores. We can also work with your preferred hosting or distribution platforms if you already have them.</p>
           </div>
         </div>
       </div>
@@ -498,7 +527,7 @@
 <img src="logo.jpg" alt="Cyber InfoSoft Corporation Logo">
             <span>Cyber InfoSoft</span>
           </div>
-          <p class="footer-text">We build custom websites that help small businesses and startups succeed online.</p>
+          <p class="footer-text">We build custom apps, games, and websites that help businesses of all sizes succeed in the digital world.</p>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -541,11 +570,11 @@
         <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
           <h4 class="footer-title">Services</h4>
           <ul class="footer-links">
+            <li class="footer-link"><a href="services.html#app-development">App Development</a></li>
+            <li class="footer-link"><a href="services.html#game-development">Game Development</a></li>
             <li class="footer-link"><a href="services.html#website-development">Website Development</a></li>
-            <li class="footer-link"><a href="services.html#ecommerce">E-commerce Websites</a></li>
-            <li class="footer-link"><a href="services.html#portfolio-sites">Portfolio Sites</a></li>
-            <li class="footer-link"><a href="services.html#landing-pages">Landing Pages</a></li>
-            <li class="footer-link"><a href="services.html#maintenance">Website Maintenance</a></li>
+            <li class="footer-link"><a href="services.html#custom-solutions">Custom Solutions</a></li>
+            <li class="footer-link"><a href="services.html#maintenance">Maintenance & Support</a></li>
           </ul>
         </div>
         

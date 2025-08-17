@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc" rx="20" ry="20"/>
+  
+  <!-- Game Console -->
+  <rect x="150" y="100" width="300" height="200" rx="15" ry="15" fill="#1e293b" stroke="#2563eb" stroke-width="4"/>
+  
+  <!-- Screen -->
+  <rect x="170" y="120" width="260" height="140" rx="5" ry="5" fill="#e2e8f0"/>
+  
+  <!-- Game Scene -->
+  <!-- Background -->
+  <rect x="170" y="120" width="260" height="140" rx="5" ry="5" fill="#0f172a"/>
+  
+  <!-- Game Elements -->
+  <!-- Platform -->
+  <rect x="190" y="200" width="80" height="10" rx="2" ry="2" fill="#60a5fa"/>
+  <rect x="290" y="170" width="80" height="10" rx="2" ry="2" fill="#60a5fa"/>
+  <rect x="230" y="140" width="80" height="10" rx="2" ry="2" fill="#60a5fa"/>
+  
+  <!-- Character -->
+  <circle cx="210" cy="185" r="10" fill="#f59e0b"/>
+  
+  <!-- Items -->
+  <rect x="320" y="155" width="10" height="10" fill="#f43f5e"/>
+  <circle cx="260" cy="125" r="8" fill="#10b981"/>
+  
+  <!-- Stars -->
+  <circle cx="190" cy="130" r="2" fill="#ffffff"/>
+  <circle cx="220" cy="150" r="1" fill="#ffffff"/>
+  <circle cx="350" cy="140" r="2" fill="#ffffff"/>
+  <circle cx="380" cy="160" r="1" fill="#ffffff"/>
+  <circle cx="400" cy="130" r="2" fill="#ffffff"/>
+  
+  <!-- Controls -->
+  <circle cx="200" cy="280" r="15" fill="#475569"/>
+  <circle cx="400" cy="280" r="15" fill="#475569"/>
+  
+  <!-- D-Pad -->
+  <rect x="195" y="270" width="10" height="20" rx="2" ry="2" fill="#94a3b8"/>
+  <rect x="190" y="275" width="20" height="10" rx="2" ry="2" fill="#94a3b8"/>
+  
+  <!-- Buttons -->
+  <circle cx="390" cy="280" r="5" fill="#f59e0b"/>
+  <circle cx="410" cy="280" r="5" fill="#3b82f6"/>
+  <circle cx="400" cy="270" r="5" fill="#10b981"/>
+  <circle cx="400" cy="290" r="5" fill="#f43f5e"/>
+  
+  <!-- Decorative Elements -->
+  <rect x="250" y="270" width="100" height="20" rx="5" ry="5" fill="#475569"/>
+  
+  <!-- Code Elements -->
+  <rect x="100" y="100" width="30" height="5" rx="2" ry="2" fill="#2563eb" opacity="0.7"/>
+  <rect x="100" y="110" width="20" height="5" rx="2" ry="2" fill="#2563eb" opacity="0.7"/>
+  <rect x="100" y="120" width="25" height="5" rx="2" ry="2" fill="#2563eb" opacity="0.7"/>
+  
+  <rect x="470" y="180" width="30" height="5" rx="2" ry="2" fill="#2563eb" opacity="0.7"/>
+  <rect x="470" y="190" width="20" height="5" rx="2" ry="2" fill="#2563eb" opacity="0.7"/>
+  <rect x="470" y="200" width="25" height="5" rx="2" ry="2" fill="#2563eb" opacity="0.7"/>
+  
+  <!-- Decorative Shapes -->
+  <circle cx="120" cy="250" r="20" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.5"/>
+  <circle cx="480" cy="120" r="15" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.5"/>
+  
+  <path d="M90,300 Q120,270 90,240" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.5"/>
+  <path d="M510,280 Q480,250 510,220" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.5"/>
+</svg>

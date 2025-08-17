@@ -15,7 +15,71 @@ document.addEventListener('DOMContentLoaded', function() {
   initTestimonialSlider();
   initFaqToggle();
   initLazyLoading();
+  initStatCounters();
 });
+
+/**
+ * Statistics Counter Animation
+ * Animates the statistics numbers counting up to their target values
+ */
+function initStatCounters() {
+  const statElements = document.querySelectorAll('.stat-number');
+  
+  if (statElements.length === 0) return;
+  
+  const options = {
+    threshold: 0.5,
+    rootMargin: '0px'
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const element = entry.target;
+        const targetValue = parseInt(element.getAttribute('data-count'));
+        const duration = 2000; // 2 seconds
+        const frameDuration = 1000 / 60; // 60fps
+        const totalFrames = Math.round(duration / frameDuration);
+        let frame = 0;
+        
+        // Start value at 0
+        let currentCount = 0;
+        element.textContent = '0';
+        
+        // Animate the counter
+        const counter = setInterval(() => {
+          frame++;
+          
+          // Calculate the progress (0 to 1)
+          const progress = frame / totalFrames;
+          
+          // Use easeOutQuad for smoother animation
+          const easeProgress = 1 - Math.pow(1 - progress, 2);
+          
+          // Calculate current count
+          currentCount = Math.floor(easeProgress * targetValue);
+          
+          // Update the element
+          element.textContent = currentCount;
+          
+          // If we've reached the target value, stop the animation
+          if (frame === totalFrames) {
+            clearInterval(counter);
+            element.textContent = targetValue;
+          }
+        }, frameDuration);
+        
+        // Stop observing once animation has started
+        observer.unobserve(element);
+      }
+    });
+  }, options);
+  
+  // Start observing each stat element
+  statElements.forEach(element => {
+    observer.observe(element);
+  });
+}
 
 /**
  * Lazy Loading and Image Optimization
