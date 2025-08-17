@@ -1,6 +1,6 @@
 # Cyber InfoSoft Corporation Website
 
-A professional, responsive website for Cyber InfoSoft Corporation, specializing in custom app development, game development, website development, and digital solutions for businesses of all sizes.
+A professional, responsive website for Cyber InfoSoft Corporation, specializing in custom website development for small businesses and startups.
 
 ## File Structure
 

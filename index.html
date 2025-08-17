@@ -5,6 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cyber InfoSoft Corporation - Custom Apps, Games & Websites</title>
   
+  <!-- Preloader Styles -->
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-in-out;
+    }
+    
+    .preloader.fade-out {
+      opacity: 0;
+    }
+    
+    .spinner {
+      width: 60px;
+      height: 60px;
+      border: 5px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      border-top-color: #4a6cf7;
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    [data-theme="dark"] .preloader {
+      background-color: #121212;
+    }
+  </style>
+  
+  <!-- Preloader Styles -->
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-in-out;
+    }
+    
+    .preloader.fade-out {
+      opacity: 0;
+    }
+    
+    .spinner {
+      width: 60px;
+      height: 60px;
+      border: 5px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      border-top-color: #4a6cf7;
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    [data-theme="dark"] .preloader {
+      background-color: #121212;
+    }
+  </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber InfoSoft Corporation - Custom Apps, Games & Websites</title>
+  
   <!-- Meta Description -->
   <meta name="description" content="Cyber InfoSoft Corporation builds custom apps, games, and websites for businesses of all sizes. We create responsive, high-performing digital solutions that drive results.">
   
@@ -62,6 +142,13 @@
   -->
 </head>
 <body>
+  <!-- Particles Background -->
+  <div id="particles-js" class="particles-container"></div>
+  
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
   <!-- Header -->
   <header class="header">
     <div class="container">
@@ -116,22 +203,34 @@
   
   <div class="backdrop"></div>
   
+  <!-- Particles Background -->
+  <div id="particles-js" class="particles-container"></div>
+  
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       <div class="row">
         <div class="col-md-6 hero-content reveal">
-          <h1 class="hero-title">Apps, Games, and Websites — Built for You</h1>
-          <p class="hero-subtitle">Custom digital solutions designed to grow your business, increase conversions, and deliver exceptional user experiences across all platforms.</p>
+          <h1 class="hero-title">Building the Future of Digital Experiences</h1>
+          <div class="animated-subheading">
+            <div class="typing-container">
+              <span class="typing-text"></span>
+              <span class="typing-cursor">|</span>
+            </div>
+          </div>
+          <p class="hero-subtitle">Custom digital solutions designed to transform your ideas into reality, delivering exceptional user experiences across all platforms.</p>
           <div class="hero-cta">
-            <a href="quote.html" class="btn btn-primary btn-lg">Start Your Project</a>
-            <a href="portfolio.html" class="btn btn-outline btn-lg">View Our Work</a>
+            <a href="quote.html" class="btn btn-primary btn-lg pulse-effect">Start Your Journey</a>
+            <a href="portfolio.html" class="btn btn-outline btn-lg hover-effect">View Our Work</a>
           </div>
         </div>
         <div class="col-md-6">
-          <img src="assets/images/hero-image.svg" alt="Digital Solutions Illustration" class="hero-image reveal" loading="eager">
+          <img src="assets/images/hero-image.svg" alt="Digital Solutions Illustration" class="hero-image floating reveal" loading="eager">
         </div>
       </div>
+    </div>
+    <div class="hero-bg-animation">
+      <canvas id="heroCanvas"></canvas>
     </div>
   </section>
   
@@ -631,7 +730,18 @@
     </div>
   </footer>
   
+  <!-- Floating Quote Button -->
+  <a href="quote.html" class="floating-quote-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 5h6m-6 0v14m0-14l-4 4m10 6h-6m6 0l-4 4"></path>
+    </svg>
+    Request a Quote
+  </a>
+  
   <!-- Scripts -->
+  <script src="js/particles.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/floating-quote.js"></script>
+  <script src="js/hero-animation.js"></script>
 </body>
 </html>

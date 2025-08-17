@@ -62,6 +62,13 @@
   -->
 </head>
 <body>
+  <!-- Particles Background -->
+  <div id="particles-js" class="particles-container"></div>
+  
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
   <!-- Header -->
   <header class="header">
     <div class="container">
@@ -124,67 +131,690 @@
     </div>
   </section>
   
-  <!-- Portfolio Filter -->
+  <!-- Portfolio Categories -->
   <section class="section">
     <div class="container">
+      <div class="section-header text-center reveal">
+        <h2>Our Portfolio Categories</h2>
+        <p class="lead">Explore our diverse range of digital solutions</p>
+      </div>
+
+      <div class="portfolio-categories">
+        <!-- Category 1: App Development -->
+        <div class="portfolio-category reveal">
+          <div class="category-card">
+            <div class="category-icon">
+              <img src="assets/images/service-website.svg" alt="App Development Icon">
+            </div>
+            <div class="category-content">
+              <h3>App Development</h3>
+              <p>Powerful mobile applications that transform ideas into groundbreaking experiences</p>
+              <a href="#app-portfolio" class="btn btn-outline">View Projects</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Game Development -->
+        <div class="portfolio-category reveal">
+          <div class="category-card">
+            <div class="category-icon">
+              <img src="assets/images/service-portfolio.svg" alt="Game Development Icon">
+            </div>
+            <div class="category-content">
+              <h3>Game Development</h3>
+              <p>Fun-packed interactive games that engage and entertain across multiple platforms</p>
+              <a href="#game-portfolio" class="btn btn-outline">View Projects</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Website Development -->
+        <div class="portfolio-category reveal">
+          <div class="category-card">
+            <div class="category-icon">
+              <img src="assets/images/service-ecommerce.svg" alt="Website Development Icon">
+            </div>
+            <div class="category-content">
+              <h3>Website Development</h3>
+              <p>Beautiful, responsive websites that deliver exceptional user experiences</p>
+              <a href="#website-portfolio" class="btn btn-outline">View Projects</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: Custom Solutions -->
+        <div class="portfolio-category reveal">
+          <div class="category-card">
+            <div class="category-icon">
+              <img src="assets/images/service-maintenance.svg" alt="Custom Solutions Icon">
+            </div>
+            <div class="category-content">
+              <h3>Custom Solutions</h3>
+              <p>Tailored digital solutions that solve unique business challenges</p>
+              <a href="#custom-portfolio" class="btn btn-outline">View Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Development Portfolio -->
+  <section id="app-portfolio" class="section bg-light">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <h2>App Development Projects</h2>
+        <p class="lead">Innovative mobile applications that deliver exceptional user experiences</p>
+      </div>
+      
       <div class="portfolio-filters reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="apps">Apps</button>
-        <button class="filter-btn" data-filter="games">Games</button>
-        <button class="filter-btn" data-filter="websites">Websites</button>
-        <button class="filter-btn" data-filter="custom">Custom Solutions</button>
+        <button class="filter-btn active" data-filter="all">All Apps</button>
+        <button class="filter-btn" data-filter="ios">iOS</button>
+        <button class="filter-btn" data-filter="android">Android</button>
+        <button class="filter-btn" data-filter="cross-platform">Cross-Platform</button>
       </div>
       
       <div class="portfolio-grid">
         <!-- App Project 1 -->
-        <div class="portfolio-item reveal" data-category="apps">
+        <div class="portfolio-item reveal" data-category="all ios android">
           <div class="portfolio-card">
             <div class="portfolio-img">
               <img 
                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
-                data-src="assets/images/portfolio-ecommerce-1.jpg" 
-                data-srcset="assets/images/portfolio-ecommerce-1-small.jpg 400w, assets/images/portfolio-ecommerce-1.jpg 800w" 
-                sizes="(max-width: 768px) 100vw, 50vw" 
-                alt="FitTrack Pro Mobile App" 
+                data-src="assets/images/portfolio-2.svg" 
+                alt="VR Escape Room" 
+                class="lazy" 
+                 loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-12" class="btn btn-sm btn-primary portfolio-btn" data-project="project-12">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>SecureChain Verify</h3>
+              <p>Blockchain-based document verification system with tamper-proof security and audit trails</p>
+              <div class="portfolio-tags">
+                <span class="tag">Blockchain</span>
+                <span class="tag">Security</span>
+                <span class="tag">Enterprise</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Client Testimonials -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <h2>Client Testimonials</h2>
+        <p class="lead">What our clients say about working with us</p>
+      </div>
+      
+      <div class="testimonial-slider reveal">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-item">
+          <div class="testimonial-content">
+            <div class="testimonial-quote">
+              <p>"Cyber InfoSoft delivered an exceptional mobile app that exceeded our expectations. Their team was professional, responsive, and truly understood our business needs."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="assets/images/team-1.svg" alt="Sarah Johnson">
+              </div>
+              <div class="author-info">
+                <h4>Sarah Johnson</h4>
+                <p>CEO, FitLife Inc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="testimonial-item">
+          <div class="testimonial-content">
+            <div class="testimonial-quote">
+              <p>"The game development team at Cyber InfoSoft is incredibly talented. They brought our vision to life with creativity and technical excellence."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="assets/images/team-2.svg" alt="Michael Chen">
+              </div>
+              <div class="author-info">
+                <h4>Michael Chen</h4>
+                <p>Creative Director, GameWorld Studios</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="testimonial-item">
+          <div class="testimonial-content">
+            <div class="testimonial-quote">
+              <p>"Our e-commerce website redesign by Cyber InfoSoft resulted in a 45% increase in conversions. Their attention to detail and user experience expertise made all the difference."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="assets/images/team-3.svg" alt="Emily Rodriguez">
+              </div>
+              <div class="author-info">
+                <h4>Emily Rodriguez</h4>
+                <p>Marketing Director, LuxuryMart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Client Logos -->
+      <div class="client-logos reveal">
+        <div class="logo-item"><img src="assets/logos/client-1.svg" alt="Client Logo 1"></div>
+        <div class="logo-item"><img src="assets/logos/client-2.svg" alt="Client Logo 2"></div>
+        <div class="logo-item"><img src="assets/logos/client-3.svg" alt="Client Logo 3"></div>
+        <div class="logo-item"><img src="assets/logos/client-4.svg" alt="Client Logo 4"></div>
+        <div class="logo-item"><img src="assets/logos/client-5.svg" alt="Client Logo 5"></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Call to Action -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content text-center reveal">
+        <h2>Ready to Start Your Project?</h2>
+        <p class="lead">Let's discuss how we can help bring your vision to life</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          <a href="quote.html" class="btn btn-outline">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Portfolio Project Modals -->
+  <div class="portfolio-modals">
+    <!-- Project 1 Modal -->
+    <div id="project-1" class="portfolio-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>FitTrack Pro</h3>
+          <button class="modal-close" aria-label="Close Modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="assets/images/portfolio-1.svg" alt="FitTrack Pro Screenshot 1">
+          </div>
+          <div class="modal-details">
+            <div class="modal-description">
+              <h4>Project Overview</h4>
+              <p>FitTrack Pro is a comprehensive fitness tracking mobile application designed to help users achieve their health and fitness goals. The app provides personalized workout plans, nutrition tracking, and AI-powered coaching.</p>
+              
+              <h4>Key Features</h4>
+              <ul>
+                <li>Personalized workout plans based on user goals and fitness level</li>
+                <li>Real-time workout tracking with performance analytics</li>
+                <li>AI-powered coaching and form correction</li>
+                <li>Nutrition tracking and meal planning</li>
+                <li>Social community features for motivation and accountability</li>
+              </ul>
+              
+              <h4>Technologies Used</h4>
+              <div class="tech-tags">
+                <span class="tag">Swift</span>
+                <span class="tag">Kotlin</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">TensorFlow Lite</span>
+                <span class="tag">RESTful API</span>
+              </div>
+            </div>
+            
+            <div class="modal-meta">
+              <div class="meta-item">
+                <h5>Client</h5>
+                <p>FitLife Inc.</p>
+              </div>
+              <div class="meta-item">
+                <h5>Timeline</h5>
+                <p>4 months</p>
+              </div>
+              <div class="meta-item">
+                <h5>Platform</h5>
+                <p>iOS & Android</p>
+              </div>
+              <div class="meta-item">
+                <h5>Category</h5>
+                <p>Mobile App</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </a>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="logo.jpg" alt="Cyber InfoSoft Corporation Logo">
+            <span>Cyber InfoSoft</span>
+          </a>
+          <p>Creating innovative digital solutions for businesses of all sizes.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html#app-development">App Development</a></li>
+              <li><a href="services.html#game-development">Game Development</a></li>
+              <li><a href="services.html#website-development">Website Development</a></li>
+              <li><a href="services.html#custom-solutions">Custom Solutions</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="contact-info">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>123 Tech Street, Suite 456<br>San Francisco, CA 94107</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>(123) 456-7890</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>info@cyberinfosoft.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; 2023 Cyber InfoSoft Corporation. All rights reserved.</p>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Floating Quote Button -->
+  <a href="quote.html" class="floating-quote-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 5h6m-6 0v14m0-14l-4 4m10 6h-6m6 0l-4 4"></path>
+    </svg>
+    Request a Quote
+  </a>
+  
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/floating-quote.js"></script>
+</body>
+</html>
+                <a href="#project-7" class="btn btn-sm btn-primary portfolio-btn" data-project="project-7">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>LuxuryMart</h3>
+              <p>Premium e-commerce platform with advanced product visualization and personalization</p>
+              <div class="portfolio-tags">
+                <span class="tag">E-commerce</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Website Project 2 -->
+        <div class="portfolio-item reveal" data-category="all corporate">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-4.svg" 
+                alt="GlobalFinance Corporate Website" 
                 class="lazy" 
                 loading="lazy">
               <div class="portfolio-overlay">
-                <a href="#project-1" class="btn btn-sm btn-light portfolio-btn" data-project="project-1">View Details</a>
+                <a href="#project-8" class="btn btn-sm btn-primary portfolio-btn" data-project="project-8">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>GlobalFinance</h3>
+              <p>Modern corporate website with interactive financial tools and client portal</p>
+              <div class="portfolio-tags">
+                <span class="tag">Corporate</span>
+                <span class="tag">Vue.js</span>
+                <span class="tag">Finance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Website Project 3 -->
+        <div class="portfolio-item reveal" data-category="all landing">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-1.svg" 
+                alt="NovaTech Product Launch" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-9" class="btn btn-sm btn-primary portfolio-btn" data-project="project-9">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>NovaTech Launch</h3>
+              <p>High-converting product launch landing page with interactive demos and animations</p>
+              <div class="portfolio-tags">
+                <span class="tag">Landing Page</span>
+                <span class="tag">HTML/CSS/JS</span>
+                <span class="tag">Technology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Custom Solutions Portfolio -->
+  <section id="custom-portfolio" class="section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <h2>Custom Solutions</h2>
+        <p class="lead">Tailored digital solutions that solve unique business challenges</p>
+      </div>
+      
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Solutions</button>
+        <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+        <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- Custom Solution 1 -->
+        <div class="portfolio-item reveal" data-category="all ai">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-2.svg" 
+                alt="AI-Powered Inventory Management" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-10" class="btn btn-sm btn-primary portfolio-btn" data-project="project-10">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>SmartInventory AI</h3>
+              <p>AI-powered inventory management system with predictive analytics and automation</p>
+              <div class="portfolio-tags">
+                <span class="tag">AI</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Retail</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Custom Solution 2 -->
+        <div class="portfolio-item reveal" data-category="all iot">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-3.svg" 
+                alt="Smart Home Automation" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-11" class="btn btn-sm btn-primary portfolio-btn" data-project="project-11">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>HomeConnect IoT</h3>
+              <p>Comprehensive smart home automation system with voice control and energy optimization</p>
+              <div class="portfolio-tags">
+                <span class="tag">IoT</span>
+                <span class="tag">Smart Home</span>
+                <span class="tag">Energy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Custom Solution 3 -->
+        <div class="portfolio-item reveal" data-category="all blockchain">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-4.svg" 
+                alt="Secure Document Verification" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-6" class="btn btn-sm btn-primary portfolio-btn" data-project="project-6">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>VR Escape Room</h3>
+              <p>Immersive virtual reality escape room experience with challenging puzzles</p>
+              <div class="portfolio-tags">
+                <span class="tag">VR</span>
+                <span class="tag">Unity Engine</span>
+                <span class="tag">Puzzle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Website Development Portfolio -->
+  <section id="website-portfolio" class="section bg-light">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <h2>Website Development Projects</h2>
+        <p class="lead">Beautiful, responsive websites that deliver exceptional user experiences</p>
+      </div>
+      
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Websites</button>
+        <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+        <button class="filter-btn" data-filter="corporate">Corporate</button>
+        <button class="filter-btn" data-filter="landing">Landing Pages</button>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- Website Project 1 -->
+        <div class="portfolio-item reveal" data-category="all ecommerce">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                 data-src="assets/images/portfolio-3.svg" 
+                 alt="LuxuryMart E-commerce Website" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-1" class="btn btn-sm btn-primary portfolio-btn" data-project="project-1">View Details</a>
               </div>
             </div>
             <div class="portfolio-content">
               <h3>FitTrack Pro</h3>
-              <p>Fitness tracking mobile app with personalized workout plans</p>
+              <p>Fitness tracking mobile app with personalized workout plans and AI-powered coaching</p>
               <div class="portfolio-tags">
-                <span class="tag">Mobile App</span>
-                <span class="tag">iOS & Android</span>
+                <span class="tag">iOS</span>
+                <span class="tag">Android</span>
                 <span class="tag">Health & Fitness</span>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- Game Project 1 -->
-        <div class="portfolio-item reveal" data-category="games">
+        <!-- App Project 2 -->
+        <div class="portfolio-item reveal" data-category="all ios">
           <div class="portfolio-card">
             <div class="portfolio-img">
               <img 
                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
-                data-src="assets/images/portfolio-portfolio-1.jpg" 
-                data-srcset="assets/images/portfolio-portfolio-1-small.jpg 400w, assets/images/portfolio-portfolio-1.jpg 800w" 
-                sizes="(max-width: 768px) 100vw, 50vw" 
+                data-src="assets/images/portfolio-2.svg" 
+                alt="EcoShop E-commerce App" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-2" class="btn btn-sm btn-primary portfolio-btn" data-project="project-2">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>EcoShop</h3>
+              <p>Sustainable e-commerce platform with carbon footprint tracking for eco-conscious consumers</p>
+              <div class="portfolio-tags">
+                <span class="tag">iOS</span>
+                <span class="tag">E-commerce</span>
+                <span class="tag">Sustainability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- App Project 3 -->
+        <div class="portfolio-item reveal" data-category="all android cross-platform">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-3.svg" 
+                alt="TravelBuddy App" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-3" class="btn btn-sm btn-primary portfolio-btn" data-project="project-3">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>TravelBuddy</h3>
+              <p>All-in-one travel companion app with AI-powered recommendations and local experiences</p>
+              <div class="portfolio-tags">
+                <span class="tag">Android</span>
+                <span class="tag">Cross-Platform</span>
+                <span class="tag">Travel & Tourism</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Game Development Portfolio -->
+  <section id="game-portfolio" class="section">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <h2>Game Development Projects</h2>
+        <p class="lead">Fun-packed interactive games that engage and entertain</p>
+      </div>
+      
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Games</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="pc">PC & Console</button>
+        <button class="filter-btn" data-filter="ar-vr">AR/VR</button>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- Game Project 1 -->
+        <div class="portfolio-item reveal" data-category="all mobile">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-4.svg" 
                 alt="Puzzle Quest Adventures Game" 
                 class="lazy" 
                 loading="lazy">
               <div class="portfolio-overlay">
-                <a href="#project-2" class="btn btn-sm btn-light portfolio-btn" data-project="project-2">View Details</a>
+                <a href="#project-4" class="btn btn-sm btn-primary portfolio-btn" data-project="project-4">View Details</a>
               </div>
             </div>
             <div class="portfolio-content">
               <h3>Puzzle Quest Adventures</h3>
-              <p>Engaging puzzle game with adventure elements for mobile platforms</p>
+              <p>Engaging puzzle game with adventure elements and immersive storylines</p>
               <div class="portfolio-tags">
-                <span class="tag">Mobile Game</span>
+                <span class="tag">Mobile</span>
                 <span class="tag">Unity Engine</span>
                 <span class="tag">Puzzle</span>
               </div>
@@ -192,8 +822,34 @@
           </div>
         </div>
         
-        <!-- Website Project 1 -->
-        <div class="portfolio-item reveal" data-category="websites">
+        <!-- Game Project 2 -->
+         <div class="portfolio-item reveal" data-category="all pc">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img 
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" 
+                data-src="assets/images/portfolio-1.svg" 
+                alt="Cosmic Explorers Game" 
+                class="lazy" 
+                loading="lazy">
+              <div class="portfolio-overlay">
+                <a href="#project-5" class="btn btn-sm btn-primary portfolio-btn" data-project="project-5">View Details</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Cosmic Explorers</h3>
+              <p>Space exploration adventure game with stunning visuals and strategic gameplay</p>
+              <div class="portfolio-tags">
+                <span class="tag">PC</span>
+                <span class="tag">Unreal Engine</span>
+                <span class="tag">Adventure</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Game Project 3 -->
+        <div class="portfolio-item reveal" data-category="all ar-vr">
           <div class="portfolio-card">
             <div class="portfolio-img">
               <img 
@@ -583,5 +1239,6 @@
   
   <!-- Scripts -->
   <script src="js/main.js"></script>
+  <script src="js/floating-quote.js"></script>
 </body>
 </html>
