@@ -133,20 +133,12 @@
       <div class="quote-form-container reveal">
         <!-- Multi-step Form -->
         <form id="quoteForm" class="quote-form" name="quote-request" method="POST" data-netlify="true">
-          <!-- Netlify Form Handling -->
-          <input type="hidden" name="form-name" value="quote-request">
-          
-          <!-- Honeypot field for spam protection -->
-          <div class="honeypot-field">
-            <label for="bot-field">Don't fill this out if you're human:</label>
-            <input name="bot-field" id="bot-field">
-          </div>
           
           <!-- Form Progress -->
           <div class="form-progress">
-            <div class="progress">
+            <!-- <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
-            </div>
+            </div> -->
             <div class="step-indicators">
               <div class="step-indicator active">1
                 <span class="step-label">Business Info</span>
@@ -209,13 +201,13 @@
               <div class="invalid-feedback">Please select your industry</div>
             </div>
             
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="business-website">Current Website (if any)</label>
-              <input type="url" id="business-website" name="business-website" class="form-control" placeholder="https://">
-            </div>
+              <input type="text" id="business-website" name="business-website" class="form-control" placeholder="https:// (optional)" pattern="https?://.+" title="Please enter a valid URL"> 
+            </div> -->
             
             <div class="form-nav">
-              <button type="button" class="btn btn-primary next-step">Next Step</button>
+                <button type="button" class="btn btn-primary next-step">Next Step</button>
             </div>
           </div>
           
@@ -609,5 +601,142 @@
   <script src="js/particles.js"></script>
   <script src="js/main.js"></script>
   <script src="js/floating-quote.js"></script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const steps = document.querySelectorAll(".form-step");
+  const indicators = document.querySelectorAll(".step-indicator");
+  let currentStep = 0;
+
+  function showStep(stepIndex) {
+    steps.forEach((step, i) => {
+      step.classList.toggle("active", i === stepIndex);
+    });
+
+    indicators.forEach((indicator, i) => {
+      indicator.classList.remove("active", "completed");
+      if (i < stepIndex) {
+        indicator.classList.add("completed");
+      } else if (i === stepIndex) {
+        indicator.classList.add("active");
+      }
+    });
+
+    currentStep = stepIndex;
+  }
+
+  function validateStep(stepIndex) {
+    const step = steps[stepIndex];
+    const inputs = step.querySelectorAll("input, select, textarea");
+    let valid = true;
+
+    for (let input of inputs) {
+      if (!input.checkValidity()) {
+        input.reportValidity(); // 🚨 show browser's own error popup
+        input.classList.add("is-invalid");
+        valid = false;
+        break; // stop at first invalid field
+      } else {
+        input.classList.remove("is-invalid");
+      }
+    }
+
+    return valid;
+  }
+
+  steps.forEach((step, index) => {
+    const nextBtn = step.querySelector(".next-step");
+    const prevBtn = step.querySelector(".prev-step");
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (validateStep(index)) {
+          showStep(index + 1);
+        }
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        showStep(index - 1);
+      });
+    }
+  });
+
+  // always start at step 0
+  showStep(0);
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const steps = document.querySelectorAll(".form-step");
+  const indicators = document.querySelectorAll(".step-indicator");
+  const form = document.getElementById("quoteForm");
+  const successMessage = document.querySelector(".form-success");
+  let currentStep = 0;
+
+  function showStep(stepIndex) {
+    steps.forEach((step, i) => {
+      step.classList.toggle("active", i === stepIndex);
+    });
+    indicators.forEach((indicator, i) => {
+      indicator.classList.remove("active", "completed");
+      if (i < stepIndex) indicator.classList.add("completed");
+      else if (i === stepIndex) indicator.classList.add("active");
+    });
+    currentStep = stepIndex;
+  }
+
+  function validateStep(stepIndex) {
+    const step = steps[stepIndex];
+    const inputs = step.querySelectorAll("input, select, textarea");
+    let valid = true;
+
+    inputs.forEach(input => {
+      if (!input.checkValidity()) {
+        input.classList.add("is-invalid");
+        valid = false;
+      } else {
+        input.classList.remove("is-invalid");
+      }
+    });
+    return valid;
+  }
+
+  steps.forEach((step, index) => {
+    const nextBtn = step.querySelector(".next-step");
+    const prevBtn = step.querySelector(".prev-step");
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (validateStep(index)) showStep(index + 1);
+      });
+    }
+    if (prevBtn) {
+      prevBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        showStep(index - 1);
+      });
+    }
+  });
+
+  // intercept form submit
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // stop actual submission
+    if (validateStep(currentStep)) {
+      form.querySelector(".quote-form").style.display = "none";
+      successMessage.classList.remove("d-none"); // show thank you
+    }
+  });
+
+  showStep(0); // start at step 1
+});
+</script>
+
 </body>
 </html>
