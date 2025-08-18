@@ -3,12 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - Cyber InfoSoft Corporation</title>
+  <title>Portfolio - Cyber InfoSoft Corporation</title>
   
   <!-- Meta Description -->
-  <meta name="description" content="Explore our comprehensive digital services including app development, game development, website development, and custom solutions for businesses of all sizes.">
+  <meta name="description" content="Explore our portfolio of custom apps, games, websites, and digital solutions that have helped businesses of all sizes achieve their digital goals.">
   
- 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cyberinfosoft.com/portfolio.html">
+  <meta property="og:title" content="Portfolio - Cyber InfoSoft Corporation">
+  <meta property="og:description" content="View our showcase of successful digital projects for businesses of all sizes. From mobile apps and games to websites and custom solutions, see how we've helped clients achieve their goals.">
+  <meta property="og:image" content="https://cyberinfosoft.com/assets/images/og-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://cyberinfosoft.com/portfolio.html">
+  <meta property="twitter:title" content="Portfolio - Cyber InfoSoft Corporation">
+  <meta property="twitter:description" content="View our showcase of successful digital projects for businesses of all sizes. From mobile apps and games to websites and custom solutions, see how we've helped clients achieve their goals.">
+  <meta property="twitter:image" content="https://cyberinfosoft.com/assets/images/twitter-image.jpg">
+  
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -37,6 +50,8 @@
     })();
   </script>
   
+</head>
+<body>
   <!-- Particles Background -->
   <div id="particles-js" class="particles-container"></div>
   
@@ -62,16 +77,16 @@
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item dropdown">
-            <a href="services.html" class="nav-link active">Services</a>
+            <a href="services.html" class="nav-link">Services</a>
             <ul class="dropdown-menu">
-              <li><a href="services.html#app-development-details" class="dropdown-item">App Development</a></li>
-              <li><a href="services.html#game-development-details" class="dropdown-item">Game Development</a></li>
-              <li><a href="services.html#website-development-details" class="dropdown-item">Website Development</a></li>
-              <li><a href="services.html#custom-solutions-details" class="dropdown-item">Custom Solutions</a></li>
+              <li><a href="services.html#app-development" class="dropdown-item">App Development</a></li>
+              <li><a href="services.html#game-development" class="dropdown-item">Game Development</a></li>
+              <li><a href="services.html#website-development" class="dropdown-item">Website Development</a></li>
+              <li><a href="services.html#custom-solutions" class="dropdown-item">Custom Solutions</a></li>
             </ul>
           </li>
           <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           <li class="nav-item"><a href="quote.html" class="nav-cta">Get a Quote</a></li>
         </ul>
@@ -98,282 +113,156 @@
   
   <div class="backdrop"></div>
   
-  <!-- Page Header -->
-  <section class="page-header bg-light">
-    <div class="container text-center">
-      <h1 class="reveal">Our Services</h1>
-      <p class="lead reveal">Comprehensive digital solutions tailored for businesses of all sizes</p>
-    </div>
-  </section>
-  
-  <!-- Service Details -->
-  <section class="section bg-light">
+  <!-- Portfolio Categories -->
+  <section class="section">
     <div class="container">
-      <div class="service-details reveal" id="website-development-details">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/images/service-website.svg" alt="Website Development" class="service-img">
-          </div>
-          <div class="col-lg-6">
-            <h2>Website Development</h2>
-            <p class="mb-4">We create custom websites that are tailored to your specific business needs and goals. Our websites are designed to be visually appealing, user-friendly, and optimized for performance.</p>
-            
-            <h4 class="mb-3">What's Included:</h4>
-            <ul class="service-list">
-              <li>Custom design and development</li>
-              <li>Responsive layout for all devices</li>
-              <li>SEO-friendly structure</li>
-              <li>Content management system</li>
-              <li>Contact forms and integration</li>
-              <li>Google Analytics setup</li>
-              <li>Basic SEO optimization</li>
-              <li>Cross-browser compatibility</li>
-            </ul>
-            
-            <h4 class="mb-3 mt-4">Timeline:</h4>
-            <p>4-8 weeks, depending on project complexity</p>
-            
-            <h4 class="mb-3 mt-4">Pricing:</h4>
-            <div class="pricing-tiers">
-              <div class="pricing-tier">
-                <h5>Basic</h5>
-                <p class="price">$1,500 - $3,000</p>
-                <p>5-7 pages, responsive design, contact form</p>
-              </div>
-              <div class="pricing-tier">
-                <h5>Standard</h5>
-                <p class="price">$3,000 - $6,000</p>
-                <p>8-15 pages, custom design, CMS, basic SEO</p>
-              </div>
-              <div class="pricing-tier">
-                <h5>Premium</h5>
-                <p class="price">$6,000+</p>
-                <p>15+ pages, advanced functionality, premium design</p>
-              </div>
+      <div class="section-header text-center reveal">
+        <h2>Our Portfolio Categories</h2>
+        <p class="lead">Explore our diverse range of digital solutions</p>
+      </div>
+
+      <div class="portfolio-categories">
+        <!-- Category 1: App Development -->
+        <div class="portfolio-category reveal">
+          <div class="category-card">
+            <div class="category-icon">
+              <img src="assets/images/service-website.svg" alt="App Development Icon">
             </div>
-            
-            <div class="mt-4">
-              <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+            <div class="category-content">
+              <h3>App Development</h3>
+              <p>Powerful mobile applications that transform ideas into groundbreaking experiences</p>
+              <a href="#app-portfolio" class="btn btn-outline">View Projects</a>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="service-details mt-5 pt-5 reveal" id="app-development-details">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-            <img src="assets/images/service-app.svg" alt="App Development" class="service-img">
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <h2>App Development</h2>
-            <p class="mb-4">We create powerful, intuitive mobile applications for iOS and Android platforms that help businesses engage with their customers, streamline operations, and drive growth.</p>
-            
-            <h4 class="mb-3">What's Included:</h4>
-            <ul class="service-list">
-              <li>Native iOS and Android development</li>
-              <li>Cross-platform solutions (React Native, Flutter)</li>
-              <li>UI/UX design for mobile</li>
-              <li>API integration and backend development</li>
-              <li>User authentication and profiles</li>
-              <li>Push notifications</li>
-              <li>Offline functionality</li>
-              <li>App Store and Google Play submission</li>
-              <li>Analytics integration</li>
-            </ul>
-            
-            <h4 class="mb-3 mt-4">Timeline:</h4>
-            <p>8-16 weeks, depending on app complexity and features</p>
-            
-            <h4 class="mb-3 mt-4">Pricing:</h4>
-            <div class="pricing-tiers">
-              <div class="pricing-tier">
-                <h5>Basic</h5>
-                <p class="price">$10,000 - $25,000</p>
-                <p>Core functionality, simple UI, single platform</p>
-              </div>
-              <div class="pricing-tier">
-                <h5>Standard</h5>
-                <p class="price">$25,000 - $50,000</p>
-                <p>Advanced features, custom design, both platforms</p>
-              </div>
-              <div class="pricing-tier">
-                <h5>Premium</h5>
-                <p class="price">$50,000+</p>
-                <p>Complex functionality, premium design, full integration</p>
-              </div>
+
+        <!-- Category 2: Game Development -->
+        <div class="portfolio-category reveal">
+          <div class="category-card">
+            <div class="category-icon">
+              <img src="assets/images/service-portfolio.svg" alt="Game Development Icon">
             </div>
-            
-            <div class="mt-4">
-              <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+            <div class="category-content" >
+              <h3>Game Development</h3>
+              <p>Fun-packed interactive games that engage and entertain across multiple platforms</p>
+              <a href="#game-portfolio" class="btn btn-outline">View Projects</a>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="service-details mt-5 pt-5 reveal" id="game-development-details">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/images/service-game.svg" alt="Game Development" class="service-img">
-          </div>
-          <div class="col-lg-6">
-            <h2>Game Development</h2>
-            <p class="mb-4">We develop engaging and immersive games for mobile, web, and desktop platforms that entertain users, drive engagement, and can be used for entertainment, education, or marketing purposes.</p>
-            
-            <h4 class="mb-3">What's Included:</h4>
-            <ul class="service-list">
-              <li>2D and 3D game development</li>
-              <li>Unity and Unreal Engine development</li>
-              <li>Game design and mechanics</li>
-              <li>Character and environment design</li>
-              <li>Animation and visual effects</li>
-              <li>Sound design and music</li>
-              <li>Multiplayer functionality</li>
-              <li>In-app purchases and monetization</li>
-              <li>Cross-platform deployment</li>
-            </ul>
-            
-            <h4 class="mb-3 mt-4">Timeline:</h4>
-            <p>12-24 weeks, depending on game complexity and features</p>
-            
-            <h4 class="mb-3 mt-4">Pricing:</h4>
-            <div class="pricing-tiers">
-              <div class="pricing-tier">
-                <h5>Basic</h5>
-                <p class="price">$15,000 - $30,000</p>
-                <p>Simple 2D game, basic mechanics</p>
-              </div>
-              <div class="pricing-tier">
-                <h5>Advanced</h5>
-                <p class="price">$30,000 - $75,000</p>
-                <p>Complex 2D or simple 3D game</p>
-              </div>
-              <div class="pricing-tier">
-                <h5>Premium</h5>
-                <p class="price">$75,000+</p>
-                <p>Advanced 3D game, complex mechanics</p>
-              </div>
+
+        <!-- Category 3: Website Development -->
+        <div class="portfolio-category reveal">
+          <div class="category-card">
+            <div class="category-icon">
+              <img src="assets/images/service-ecommerce.svg" alt="Website Development Icon">
             </div>
-            
-            <div class="mt-4">
-              <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+            <div class="category-content">
+              <h3>Website Development</h3>
+              <p>Beautiful, responsive websites that deliver exceptional user experiences</p>
+              <a href="#website-portfolio" class="btn btn-outline">View Projects</a>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="service-details mt-5 pt-5 reveal" id="custom-solutions-details">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-            <img src="assets/images/service-custom.svg" alt="Custom Digital Solutions" class="service-img">
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <h2>Custom Digital Solutions</h2>
-            <p class="mb-4">We develop tailored digital solutions that address your unique business challenges using cutting-edge technologies like AI, machine learning, IoT, and more.</p>
-            
-            <h4 class="mb-3">What's Included:</h4>
-            <ul class="service-list">
-              <li>Custom software development</li>
-              <li>AI and machine learning integration</li>
-              <li>IoT application development</li>
-              <li>Blockchain solutions</li>
-              <li>AR/VR experiences</li>
-              <li>Data analytics and visualization</li>
-              <li>API development and integration</li>
-              <li>Legacy system modernization</li>
-              <li>Cloud migration and solutions</li>
-            </ul>
-            
-            <h4 class="mb-3 mt-4">Timeline:</h4>
-            <p>12-36 weeks, depending on solution complexity</p>
-            
-            <h4 class="mb-3 mt-4">Pricing:</h4>
-            <div class="pricing-tiers">
-              <div class="pricing-tier">
-                <h5>Basic</h5>
-                <p class="price">$20,000 - $50,000</p>
-                <p>Simple custom solution, limited features</p>
-              </div>
-              <div class="pricing-tier">
-                <h5>Advanced</h5>
-                <p class="price">$50,000 - $100,000</p>
-                <p>Complex solution, advanced integrations</p>
-              </div>
-              <div class="pricing-tier">
-                <h5>Enterprise</h5>
-                <p class="price">$100,000+</p>
-                <p>Enterprise-grade solution, full customization</p>
-              </div>
+
+        <!-- Category 4: Custom Solutions -->
+        <div class="portfolio-category reveal">
+          <div class="category-card">
+            <div class="category-icon">
+              <img src="assets/images/service-maintenance.svg" alt="Custom Solutions Icon">
             </div>
-            
-            <div class="mt-4">
-              <a href="quote.html" class="btn btn-primary">Request a Quote</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="service-details mt-5 pt-5 reveal" id="maintenance-details">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/images/service-maintenance.svg" alt="Digital Product Maintenance" class="service-img">
-          </div>
-          <div class="col-lg-6">
-            <h2>Maintenance & Support</h2>
-            <p class="mb-4">We provide ongoing maintenance and support services for all digital products to ensure they remain secure, up-to-date, and performing optimally at all times.</p>
-            
-            <h4 class="mb-3">What's Included:</h4>
-            <ul class="service-list">
-              <li>Regular software updates</li>
-              <li>Security monitoring and patches</li>
-              <li>Bug fixes and issue resolution</li>
-              <li>Performance optimization</li>
-              <li>Content and feature updates</li>
-              <li>Technical support</li>
-              <li>App store compliance management</li>
-              <li>Analytics and reporting</li>
-              <li>User feedback implementation</li>
-            </ul>
-            
-            <h4 class="mb-3 mt-4">Timeline:</h4>
-            <p>Monthly or annual maintenance plans</p>
-            
-            <h4 class="mb-3 mt-4">Pricing:</h4>
-            <div class="pricing-tiers">
-              <div class="pricing-tier">
-                <h5>Basic</h5>
-                <p class="price">$149/month</p>
-                <p>Essential maintenance and updates</p>
-              </div>
-              <div class="pricing-tier">
-                <h5>Standard</h5>
-                <p class="price">$299/month</p>
-                <p>Regular updates, support, and monitoring</p>
-              </div>
-              <div class="pricing-tier">
-                <h5>Premium</h5>
-                <p class="price">$499/month</p>
-                <p>Priority support, feature updates, analytics</p>
-              </div>
-            </div>
-            
-            <div class="mt-4">
-              <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+            <div class="category-content">
+              <h3>Custom Solutions</h3>
+              <p>Tailored digital solutions that solve unique business challenges</p>
+              <a href="#custom-portfolio" class="btn btn-outline">View Projects</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- CTA Section -->
-  <section class="section cta bg-primary">
-    <div class="container text-center">
-      <h2 class="text-white reveal">Ready to Start Your Project?</h2>
-      <p class="text-white mb-4 reveal">Let's create a digital solution that helps your business grow.</p>
-      <a href="quote.html" class="btn btn-lg btn-light reveal">Get a Free Quote</a>
+      
+  <!-- Call to Action -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content text-center reveal">
+        <h2>Ready to Start Your Project?</h2>
+        <p class="lead">Let's discuss how we can help bring your vision to life</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          <a href="quote.html" class="btn btn-outline">Get a Quote</a>
+        </div>
+      </div>
     </div>
   </section>
   
+  <!-- Portfolio Project Modals -->
+  <div class="portfolio-modals">
+    <!-- Project 1 Modal -->
+    <div id="project-1" class="portfolio-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>FitTrack Pro</h3>
+          <button class="modal-close" aria-label="Close Modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-gallery">
+            <img src="assets/images/portfolio-1.svg" alt="FitTrack Pro Screenshot 1">
+          </div>
+          <div class="modal-details">
+            <div class="modal-description">
+              <h4>Project Overview</h4>
+              <p>FitTrack Pro is a comprehensive fitness tracking mobile application designed to help users achieve their health and fitness goals. The app provides personalized workout plans, nutrition tracking, and AI-powered coaching.</p>
+              
+              <h4>Key Features</h4>
+              <ul>
+                <li>Personalized workout plans based on user goals and fitness level</li>
+                <li>Real-time workout tracking with performance analytics</li>
+                <li>AI-powered coaching and form correction</li>
+                <li>Nutrition tracking and meal planning</li>
+                <li>Social community features for motivation and accountability</li>
+              </ul>
+              
+              <h4>Technologies Used</h4>
+              <div class="tech-tags">
+                <span class="tag">Swift</span>
+                <span class="tag">Kotlin</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">TensorFlow Lite</span>
+                <span class="tag">RESTful API</span>
+              </div>
+            </div>
+            
+            <div class="modal-meta">
+              <div class="meta-item">
+                <h5>Client</h5>
+                <p>FitLife Inc.</p>
+              </div>
+              <div class="meta-item">
+                <h5>Timeline</h5>
+                <p>4 months</p>
+              </div>
+              <div class="meta-item">
+                <h5>Platform</h5>
+                <p>iOS & Android</p>
+              </div>
+              <div class="meta-item">
+                <h5>Category</h5>
+                <p>Mobile App</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </a>
+   
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -450,16 +339,7 @@
     </div>
   </footer>
   
-  <!-- Floating Quote Button -->
-  <a href="quote.html" class="floating-quote-btn">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M11 5h6m-6 0v14m0-14l-4 4m10 6h-6m6 0l-4 4"></path>
-    </svg>
-    Request a Quote
-  </a>
-  
   <!-- Scripts -->
-  <script src="js/particles.js"></script>
   <script src="js/main.js"></script>
   <script src="js/floating-quote.js"></script>
 </body>
