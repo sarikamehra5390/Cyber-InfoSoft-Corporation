@@ -2669,7 +2669,6 @@ ul, ol {
   transform-origin: 0 0;
   z-index: 1;
   padding: 0 0.25rem;
-  background-color: transparent;
   font-weight: 500;
 }
 
@@ -2708,7 +2707,7 @@ ul, ol {
 .form-control:not(:placeholder-shown) + .form-label {
   transform: translateY(-1.4rem) scale(0.85);
   color: var(--primary-color);
-  background-color: rgba(var(--card-bg-rgb, 255, 255, 255), 0.9);
+  /* background-color: rgba(var(--card-bg-rgb, 255, 255, 255), 0.9); */
 }
 
 .form-control::placeholder {
@@ -3291,7 +3290,7 @@ textarea.form-control {
 }
 
 .bg-light {
-  background-color: var(--bg-light);
+  background-color: none;
 }
 
 .bg-dark {
@@ -4505,7 +4504,7 @@ textarea.form-control {
   font-size: 0.75rem;
   color: var(--primary-color);
   font-weight: 600;
-  transform: translateY(-50%);
+  transform: translateY(-30%);
   letter-spacing: 0.5px;
   opacity: 1;
 }
@@ -4537,8 +4536,9 @@ textarea.form-control {
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
-  z-index: 3;
-}
+
+  /* z-index: 3;
+} */
 
 .animated-input .form-control:focus ~ .input-focus-effect {
   width: 100%;
@@ -5608,3 +5608,41 @@ textarea.form-control {
   padding: var(--spacing-md) 0;   /* ≈16px top-bottom */
 }
 
+.quick-contact-buttons {
+  display: block;
+  padding: 1.5rem;
+  background: rgba(200, 200, 200, 0.2); /* glassmorphism style */
+  border-radius: 12px;
+  width: 100%;
+  height: auto; /* let height adjust to content */
+}
+
+.quick-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center; /* center buttons */
+}
+
+.quick-button {
+  flex: 1 1 120px;
+  text-align: center;
+}
+
+.progress-steps .step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.progress-steps .step.active {
+  background: var(--primary-color); /* glow color */
+  color: #fff;
+  box-shadow: 0 0 15px var(--primary-color);
+}
