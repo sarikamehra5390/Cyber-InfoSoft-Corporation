@@ -1448,6 +1448,7 @@ ul, ol {
 }
 
 /* ===== Cards ===== */
+
 .card {
   background-color: var(--card-bg);
   border-radius: var(--border-radius);
@@ -5602,3 +5603,8 @@ textarea.form-control {
     padding: 0;
   }
 }
+
+.section-xs {
+  padding: var(--spacing-md) 0;   /* ≈16px top-bottom */
+}
+
