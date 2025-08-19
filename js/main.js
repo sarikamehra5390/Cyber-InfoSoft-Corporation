@@ -190,15 +190,31 @@ function initThemeToggle() {
  * Handles mobile menu toggle and animations
  */
 function initMobileNav() {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const mobileNav = document.querySelector('.mobile-nav');
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
   
-  if (menuToggle && mobileNav) {
-    menuToggle.addEventListener('click', function() {
+  const backdrop = document.querySelector('.backdrop');
+  
+  if (hamburger && navMenu) {
+    hamburger.addEventListener('click', function() {
       this.classList.toggle('active');
-      mobileNav.classList.toggle('active');
+      navMenu.classList.toggle('active');
       document.body.classList.toggle('no-scroll');
+      
+      if (backdrop) {
+        backdrop.classList.toggle('active');
+      }
     });
+    
+    // Close menu when clicking on backdrop
+    if (backdrop) {
+      backdrop.addEventListener('click', function() {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+        backdrop.classList.remove('active');
+      });
+    }
     
     // Close mobile nav when clicking outside
     document.addEventListener('click', function(event) {
