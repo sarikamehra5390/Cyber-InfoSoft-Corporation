@@ -1,0 +1,69 @@
+/* Custom CSS for Portfolio Page Alignment */
+
+/* Center align portfolio categories in a 2x2 grid */
+.portfolio-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.portfolio-category {
+  flex: 0 0 calc(50% - var(--spacing-lg));
+  max-width: calc(50% - var(--spacing-lg));
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Fix for the App Development category to be in the same row */
+section.section + .portfolio-category {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 var(--spacing-lg);
+}
+
+/* Footer layout improvements */
+.footer .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .col-lg-4,
+.footer .col-lg-2 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .portfolio-category {
+    flex: 0 0 calc(50% - var(--spacing-lg));
+    max-width: calc(50% - var(--spacing-lg));
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio-categories {
+    gap: var(--spacing-md);
+  }
+  
+  .portfolio-category {
+    flex: 0 0 calc(50% - var(--spacing-md));
+    max-width: calc(50% - var(--spacing-md));
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-category {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .footer .col-lg-4,
+  .footer .col-lg-2 {
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+  }
+}
