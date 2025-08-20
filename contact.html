@@ -175,19 +175,14 @@
     <div class="container text-center">
       <h1 class="reveal">Contact Us</h1>
       <p class="lead reveal">Get in touch with our team to discuss your project</p>
-      <div class="animated-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-      </div>
+      <!-- Removed animated shapes for stability -->
     </div>
   </section>
   
   <!-- Contact Section -->
   <section class="contact-section">
     <div class="container">
-      <div class="glassmorphism-bg"></div>
+      <!-- Removed animated shapes for stability -->
       <div class="contact-grid">
         <div class="contact-form-wrapper">
           <div class="contact-form reveal glassmorphism">
@@ -199,61 +194,52 @@
               <!-- Netlify Form Handling -->
               <input type="hidden" name="form-name" value="contact">
               
-              <div class="form-group animated-input">
-                <input type="text" class="form-control" id="name" name="name" style="--animation-order: 1" required>
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" required>
                 <label for="name" class="form-label">Your Name</label>
                 <div class="input-focus-effect"></div>
                 <div class="invalid-feedback">Please enter your name</div>
               </div>
               
-              <div class="form-group animated-input">
-                <input type="email" class="form-control" id="email" name="email" style="--animation-order: 2" required>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" required>
                 <label for="email" class="form-label">Email Address</label>
                 <div class="input-focus-effect"></div>
                 <div class="invalid-feedback">Please enter a valid email address</div>
               </div>
               
-              <div class="form-group animated-input">
-                <input type="tel" class="form-control" id="phone" name="phone" style="--animation-order: 3">
+              <div class="form-group">
+                <input type="tel" class="form-control" id="phone" name="phone">
                 <label for="phone" class="form-label">Phone Number (Optional)</label>
                 <div class="input-focus-effect"></div>
                 <div class="invalid-feedback">Please enter a valid phone number</div>
               </div>
               
-              <div class="form-group animated-input">
-                <textarea class="form-control" id="message" name="message" rows="5" style="--animation-order: 4" required></textarea>
+              <div class="form-group">
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                 <label for="message" class="form-label">Your Message</label>
                 <div class="input-focus-effect"></div>
                 <div class="invalid-feedback">Please enter your message</div>
               </div>
               
               <div class="form-group">
-                <div class="form-check animated-checkbox">
+                <div class="form-check mb-4">
                   <input class="form-check-input" type="checkbox" id="privacy-policy" name="privacy-policy" required>
                   <label class="form-check-label" for="privacy-policy">
-                    I agree to the <a href="#">Privacy Policy</a>
+                    I agree to the <a href="privacy-policy.html">Privacy Policy</a>
                   </label>
-                  <div class="checkbox-ripple"></div>
                   <div class="invalid-feedback">You must agree to our Privacy Policy</div>
                 </div>
               </div>
               
-              <button type="submit" class="btn btn-primary btn-send-message btn-glow btn-lg w-100">
-                <div class="btn-content">
-                  <span class="btn-text">Send Message</span>
-                  <span class="btn-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="22" y1="2" x2="11" y2="13"></line>
-                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                    </svg>
-                  </span>
-                  <span class="btn-success-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </span>
-                </div>
-                <div class="btn-particles"></div>
+              <button type="submit" class="btn btn-primary">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </span>
               </button>
               
               <!-- Quick Contact Buttons -->
@@ -324,61 +310,88 @@
         </div>
         
         <div class="contact-info-wrapper">
-          <div class="contact-info reveal">
+          <div class="contact-info reveal glassmorphism">
             <h3>Contact Information</h3>
-            <p class="mb-4">Reach out to us directly using the information below.</p>
+            <p class="mb-4">Feel free to reach out to us using the contact information below. We're here to help!</p>
             
             <div class="contact-info-items">
               <div class="contact-info-item">
-                <div class="contact-icon">
+                <div class="contact-info-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
                 </div>
-                <div class="contact-text">
-                  <h4>Phone</h4>
+                <div class="contact-info-content">
+                  <h4>Call Us</h4>
                   <p><a href="tel:+1234567890">(123) 456-7890</a></p>
                 </div>
               </div>
               
               <div class="contact-info-item">
-                <div class="contact-icon">
+                <div class="contact-info-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                     <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
                 </div>
-                <div class="contact-text">
-                  <h4>Email</h4>
+                <div class="contact-info-content">
+                  <h4>Email Us</h4>
                   <p><a href="mailto:info@cyberinfosoft.com">info@cyberinfosoft.com</a></p>
                 </div>
               </div>
               
               <div class="contact-info-item">
-                <div class="contact-icon">
+                <div class="contact-info-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
                 </div>
-                <div class="contact-text">
-                  <h4>Address</h4>
+                <div class="contact-info-content">
+                  <h4>Our Location</h4>
                   <p>123 Tech Street, Suite 456<br>San Francisco, CA 94107</p>
                 </div>
               </div>
               
               <div class="contact-info-item">
-                <div class="contact-icon">
+                <div class="contact-info-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <polyline points="12 6 12 12 16 14"></polyline>
                   </svg>
                 </div>
-                <div class="contact-text">
+                <div class="contact-info-content">
                   <h4>Business Hours</h4>
-                  <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday - Sunday: Closed</p>
+                  <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday & Sunday: Closed</p>
                 </div>
               </div>
+            </div>
+            
+            <div class="contact-social mt-4">
+              <a href="#" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
             </div>
             
             </div>
