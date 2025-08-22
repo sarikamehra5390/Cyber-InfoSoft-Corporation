@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Cyber InfoSoft Corporation</title>
+  
+  <!-- Meta Description -->
+  <meta name="description" content="Create your Cyber InfoSoft account to access exclusive features and manage your projects.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+  
+  <!-- Prevent Flash of Incorrect Theme -->
+  <script>
+    (function() {
+      // Immediately apply the saved theme to prevent flash
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- Particles Background -->
+  <div id="particles-js" class="particles-container"></div>
+  
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <img src="logo.jpg" alt="Cyber InfoSoft Corporation Logo">
+          <span>Cyber InfoSoft</span>
+        </a>
+        
+        <button class="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="services.html" class="nav-link">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html#app-development-details" class="dropdown-item">App Development</a></li>
+              <li><a href="services.html#game-development-details" class="dropdown-item">Game Development</a></li>
+              <li><a href="services.html#website-development-details" class="dropdown-item">Website Development</a></li>
+              <li><a href="services.html#custom-solutions-details" class="dropdown-item">Custom Solutions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="signup.html" class="nav-link active">Sign Up</a></li>
+          <li class="nav-item"><a href="quote.html" class="nav-cta">Get a Quote</a></li>
+        </ul>
+        
+        <button class="theme-toggle" aria-label="Toggle Dark Mode">
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon d-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Signup Section -->
+  <section class="signup-section section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="section-title text-center mb-5">
+            <h2>Create Your Account</h2>
+            <p>Join Cyber InfoSoft and get access to exclusive features</p>
+          </div>
+          
+          <div class="signup-form-wrapper">
+            <form id="signupForm" class="signup-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Enter your first name" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Enter your last name" required>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
+              </div>
+              
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Create a password" required>
+                <small class="form-text text-muted">Password must be at least 8 characters with letters, numbers, and special characters</small>
+              </div>
+              
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+              </div>
+              
+              <div class="form-group form-check">
+                <input type="checkbox" id="termsAgree" name="termsAgree" class="form-check-input" required>
+                <label for="termsAgree" class="form-check-label">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+              
+              <div class="form-footer text-center mt-4">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <a href="index.html" class="footer-logo">
+                <img src="logo.jpg" alt="Cyber InfoSoft Corporation Logo">
+                <span>Cyber InfoSoft</span>
+              </a>
+              <p>We build custom applications, games, and websites that help businesses grow and succeed in the digital world.</p>
+              <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-widget">
+              <h4>Quick Links</h4>
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h4>Our Services</h4>
+              <ul class="footer-links">
+                <li><a href="services.html#app-development-details">App Development</a></li>
+                <li><a href="services.html#game-development-details">Game Development</a></li>
+                <li><a href="services.html#website-development-details">Website Development</a></li>
+                <li><a href="services.html#custom-solutions-details">Custom Solutions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h4>Contact Info</h4>
+              <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA 94043</li>
+                <li><i class="fas fa-phone-alt"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:info@cyberinfosoft.com">info@cyberinfosoft.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="copyright">&copy; 2023 Cyber InfoSoft Corporation. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6">
+            <ul class="footer-bottom-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  
+  <!-- Form Validation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const signupForm = document.getElementById('signupForm');
+      
+      if (signupForm) {
+        signupForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const firstName = document.getElementById('firstName').value;
+          const lastName = document.getElementById('lastName').value;
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+          const confirmPassword = document.getElementById('confirmPassword').value;
+          const termsAgree = document.getElementById('termsAgree').checked;
+          
+          // Basic validation
+          if (!firstName || !lastName || !email || !password || !confirmPassword) {
+            alert('Please fill in all required fields');
+            return;
+          }
+          
+          // Email validation
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address');
+            return;
+          }
+          
+          // Password validation
+          if (password.length < 8) {
+            alert('Password must be at least 8 characters long');
+            return;
+          }
+          
+          // Password match validation
+          if (password !== confirmPassword) {
+            alert('Passwords do not match');
+            return;
+          }
+          
+          // Terms agreement validation
+          if (!termsAgree) {
+            alert('You must agree to the Terms of Service and Privacy Policy');
+            return;
+          }
+          
+          // Here you would typically send the data to your server
+          console.log('Signup form submitted:', { firstName, lastName, email, password });
+          alert('Account created successfully! Redirecting to login...');
+          
+          // Simulate redirect (in a real app, this would redirect after successful registration)
+          // window.location.href = 'login.html';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
