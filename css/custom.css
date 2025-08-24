@@ -10,6 +10,168 @@
   max-width: 1000px;
 }
 
+/* Ensure consistent image sizes in portfolio category cards */
+.category-icon {
+  height: 220px;
+  overflow: hidden;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.category-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 5px 15px var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-card:hover .category-icon img {
+  transform: scale(1.05);
+}
+
+.category-content {
+  padding: var(--spacing-md);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-content h3 {
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.4rem;
+}
+
+.category-content p {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-light);
+  flex-grow: 1;
+}
+
+.category-content .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* Add Template Form Styling */
+.add-template-section {
+  margin-top: 3rem;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 2.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-template-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.add-template-form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.add-template-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.add-template-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.add-template-form .form-group input,
+.add-template-form .form-group textarea,
+.add-template-form .form-group select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--input-bg);
+  color: var(--text-dark);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-template-form .form-group input:focus,
+.add-template-form .form-group textarea:focus,
+.add-template-form .form-group select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.1);
+  outline: none;
+}
+
+.add-template-form .form-group:nth-child(3),
+.add-template-form .form-group:nth-child(4) {
+  grid-column: span 1;
+}
+
+.add-template-form .form-group:nth-child(1),
+.add-template-form .form-group:nth-child(2),
+.add-template-form .form-group:nth-child(5),
+.add-template-form .form-group:nth-child(6) {
+  grid-column: span 2;
+}
+
+.add-template-form button[type="submit"] {
+  grid-column: span 2;
+  justify-self: center;
+  min-width: 200px;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.add-template-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments for the form */
+@media (max-width: 768px) {
+  .add-template-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .add-template-form .form-group:nth-child(3),
+  .add-template-form .form-group:nth-child(4) {
+    grid-column: span 1;
+  }
+  
+  .add-template-form .form-group:nth-child(1),
+  .add-template-form .form-group:nth-child(2),
+  .add-template-form .form-group:nth-child(5),
+  .add-template-form .form-group:nth-child(6) {
+    grid-column: span 1;
+  }
+  
+  .add-template-form button[type="submit"] {
+    grid-column: span 1;
+  }
+}
+
 .portfolio-category {
   flex: 0 0 calc(50% - var(--spacing-lg));
   max-width: calc(50% - var(--spacing-lg));
@@ -360,6 +522,10 @@ section.section + .portfolio-category {
     max-width: calc(50% - var(--spacing-md));
   }
   
+  .category-icon {
+    height: 200px; /* Slightly smaller height for medium screens */
+  }
+  
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -369,6 +535,10 @@ section.section + .portfolio-category {
   .portfolio-category {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  
+  .category-icon {
+    height: 240px; /* Slightly larger height for mobile to maintain aspect ratio */
   }
   
   .footer .col-lg-4,
@@ -383,5 +553,11 @@ section.section + .portfolio-category {
   
   .about-image-wrapper {
     margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-icon {
+    height: 200px; /* Adjusted height for very small screens */
   }
 }
