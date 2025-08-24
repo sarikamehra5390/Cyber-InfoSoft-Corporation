@@ -30,13 +30,41 @@
   <link rel="manifest" href="site.webmanifest">
   
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Rakkas&family=Style+Script&family=Bangers&display=swap" rel="stylesheet">
   
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/templates.css">
+    
+  <style>
+    .font-display { 
+      font-family: 'Style Script', cursive; 
+    }
+    .font-handwriting { 
+      font-family: 'Noto Sans Mono', monospace; 
+    }
+    .font-title { 
+      font-family: 'Rakkas', serif; 
+    }
+    .font-cute { 
+      font-family: 'Bangers', cursive; 
+      font-weight: 400; 
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+    }
+    
+    .section-header h2 {
+      font-family: 'Bangers', cursive;
+      font-weight: 400;
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+      font-size: 2.5rem;
+    }
+  </style>
   
   <!-- Prevent Flash of Incorrect Theme -->
   <script>
@@ -118,8 +146,8 @@
   <section class="section">
     <div class="container">
       <div class="section-header text-center reveal">
-        <h2>Our Game Templates</h2>
-        <p class="lead">Choose from our selection of engaging and interactive game templates</p>
+        <h2 class="font-cute">OUR GAME TEMPLATES</h2>
+        <p class="lead font-handwriting">Choose from our selection of engaging and interactive game templates</p>
       </div>
 
       <div class="templates-grid">
@@ -136,7 +164,9 @@
             <p>A classic arcade-style game template with customizable characters and levels.</p>
             <div class="template-meta">
               <span class="template-category">Arcade</span>
-              <span class="template-price">$599</span>
+              <span class="template-price">₹50,000</span>
+            </div>
+          </div>
         </div>
 
         <!-- Template 2 -->
@@ -152,7 +182,9 @@
             <p>A challenging puzzle game template with multiple difficulty levels and themes.</p>
             <div class="template-meta">
               <span class="template-category">Puzzle</span>
-              <span class="template-price">$499</span>
+              <span class="template-price">₹41,500</span>
+            </div>
+          </div>
         </div>
 
         <!-- Template 3 -->
@@ -168,7 +200,9 @@
             <p>An educational game template designed to make learning fun and interactive.</p>
             <div class="template-meta">
               <span class="template-category">Educational</span>
-              <span class="template-price">$699</span>
+              <span class="template-price">₹58,000</span>
+            </div>
+          </div>
         </div>
 
         <!-- Template 4 -->
@@ -184,7 +218,9 @@
             <p>A turn-based strategy game template with resource management and tactical gameplay.</p>
             <div class="template-meta">
               <span class="template-category">Strategy</span>
-              <span class="template-price">$799</span>
+              <span class="template-price">₹66,500</span>
+            </div>
+          </div>
         </div>
       </div>
 
