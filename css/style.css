@@ -1057,7 +1057,7 @@ ul, ol {
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   margin-bottom: var(--spacing-md);
   background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
   -webkit-background-clip: text;
@@ -1216,7 +1216,7 @@ ul, ol {
   }
   
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   
   .hero-image {
@@ -3838,7 +3838,7 @@ textarea.form-control {
   }
   
   .hero-title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   
   .section {
