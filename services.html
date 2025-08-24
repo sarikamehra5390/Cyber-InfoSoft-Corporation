@@ -19,7 +19,46 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Noto+Sans+Mono&family=Rakkas&family=Style+Script&family=Bangers&display=swap" rel="stylesheet">
+  
+  <style>
+    .font-display { 
+      font-family: 'Style Script', cursive; 
+    }
+    .font-handwriting { 
+      font-family: 'Noto Sans Mono', monospace; 
+    }
+    .font-title { 
+      font-family: 'Rakkas', serif; 
+    }
+    .font-cute { 
+      font-family: 'Bangers', cursive; 
+      font-weight: 400; 
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+    }
+    
+    .service-details h2 {
+      font-family: 'Bangers', cursive;
+      font-weight: 400;
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+      font-size: 2.2rem;
+    }
+    
+    .page-header h1 {
+      font-family: 'Bangers', cursive;
+      font-weight: 400;
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+      font-size: 3rem;
+    }
+    
+    .page-header p.lead {
+      font-family: 'Noto Sans Mono', monospace;
+      font-size: 1.2rem;
+    }
+  </style>
   
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
@@ -103,7 +142,7 @@
   <!-- Page Header -->
   <section class="page-header bg-light">
     <div class="container text-center">
-      <h1 class="reveal">Our Services</h1>
+      <h1 class="reveal" style="font-size: 3.5rem;">Our Services</h1>
       <p class="lead reveal">Comprehensive digital solutions tailored for businesses of all sizes</p>
     </div>
   </section>
@@ -111,13 +150,11 @@
   <!-- Service Details -->
   <section class="section bg-light">
     <div class="container">
-      <div class="service-details reveal" id="website-development-details">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/images/service-website.svg" alt="Website Development" class="service-img">
-          </div>
-          <div class="col-lg-6">
-            <h2>Website Development</h2>
+      <div class="service-section" style="background-color: rgba(128, 128, 128, 0.25); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div class="service-details reveal" id="website-development-details">
+          <div class="row">
+            <div class="col-lg-12">
+            <h2 class="font-cute">Website Development</h2>
             <p class="mb-4">We create custom websites that are tailored to your specific business needs and goals. Our websites are designed to be visually appealing, user-friendly, and optimized for performance.</p>
             
             <h4 class="mb-3">What's Included:</h4>
@@ -139,17 +176,17 @@
             <div class="pricing-tiers">
               <div class="pricing-tier">
                 <h5>Basic</h5>
-                <p class="price">$1,500 - $3,000</p>
+                <p class="price">₹1,12,500 - ₹2,25,000</p>
                 <p>5-7 pages, responsive design, contact form</p>
               </div>
               <div class="pricing-tier">
                 <h5>Standard</h5>
-                <p class="price">$3,000 - $6,000</p>
+                <p class="price">₹2,25,000 - ₹4,50,000</p>
                 <p>8-15 pages, custom design, CMS, basic SEO</p>
               </div>
               <div class="pricing-tier">
                 <h5>Premium</h5>
-                <p class="price">$6,000+</p>
+                <p class="price">₹4,50,000+</p>
                 <p>15+ pages, advanced functionality, premium design</p>
               </div>
             </div>
@@ -157,17 +194,16 @@
             <div class="mt-4">
               <a href="quote.html" class="btn btn-primary">Request a Quote</a>
             </div>
+            </div>
           </div>
         </div>
       </div>
       
-      <div class="service-details mt-5 pt-5 reveal" id="app-development-details">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-            <img src="assets/images/service-app.svg" alt="App Development" class="service-img">
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <h2>App Development</h2>
+      <div class="service-section" style="background-color: rgba(128, 128, 128, 0.3); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div class="service-details reveal" id="app-development-details">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="font-cute">App Development</h2>
             <p class="mb-4">We create powerful, intuitive mobile applications for iOS and Android platforms that help businesses engage with their customers, streamline operations, and drive growth.</p>
             
             <h4 class="mb-3">What's Included:</h4>
@@ -190,17 +226,17 @@
             <div class="pricing-tiers">
               <div class="pricing-tier">
                 <h5>Basic</h5>
-                <p class="price">$10,000 - $25,000</p>
+                <p class="price">₹7,50,000 - ₹18,75,000</p>
                 <p>Core functionality, simple UI, single platform</p>
               </div>
               <div class="pricing-tier">
                 <h5>Standard</h5>
-                <p class="price">$25,000 - $50,000</p>
+                <p class="price">₹18,75,000 - ₹37,50,000</p>
                 <p>Advanced features, custom design, both platforms</p>
               </div>
               <div class="pricing-tier">
                 <h5>Premium</h5>
-                <p class="price">$50,000+</p>
+                <p class="price">₹37,50,000+</p>
                 <p>Complex functionality, premium design, full integration</p>
               </div>
             </div>
@@ -211,14 +247,13 @@
           </div>
         </div>
       </div>
+      </div>
       
-      <div class="service-details mt-5 pt-5 reveal" id="game-development-details">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/images/service-game.svg" alt="Game Development" class="service-img">
-          </div>
-          <div class="col-lg-6">
-            <h2>Game Development</h2>
+      <div class="service-section" style="background-color: rgba(128, 128, 128, 0.35); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div class="service-details reveal" id="game-development-details">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="font-cute">Game Development</h2>
             <p class="mb-4">We develop engaging and immersive games for mobile, web, and desktop platforms that entertain users, drive engagement, and can be used for entertainment, education, or marketing purposes.</p>
             
             <h4 class="mb-3">What's Included:</h4>
@@ -241,17 +276,17 @@
             <div class="pricing-tiers">
               <div class="pricing-tier">
                 <h5>Basic</h5>
-                <p class="price">$15,000 - $30,000</p>
+                <p class="price">₹11,25,000 - ₹22,50,000</p>
                 <p>Simple 2D game, basic mechanics</p>
               </div>
               <div class="pricing-tier">
                 <h5>Advanced</h5>
-                <p class="price">$30,000 - $75,000</p>
+                <p class="price">₹22,50,000 - ₹56,25,000</p>
                 <p>Complex 2D or simple 3D game</p>
               </div>
               <div class="pricing-tier">
                 <h5>Premium</h5>
-                <p class="price">$75,000+</p>
+                <p class="price">₹56,25,000+</p>
                 <p>Advanced 3D game, complex mechanics</p>
               </div>
             </div>
@@ -262,14 +297,13 @@
           </div>
         </div>
       </div>
+      </div>
       
-      <div class="service-details mt-5 pt-5 reveal" id="custom-solutions-details">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-            <img src="assets/images/service-custom.svg" alt="Custom Digital Solutions" class="service-img">
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <h2>Custom Digital Solutions</h2>
+      <div class="service-section" style="background-color: rgba(128, 128, 128, 0.4); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div class="service-details reveal" id="custom-solutions-details">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="font-cute">Custom Digital Solutions</h2>
             <p class="mb-4">We develop tailored digital solutions that address your unique business challenges using cutting-edge technologies like AI, machine learning, IoT, and more.</p>
             
             <h4 class="mb-3">What's Included:</h4>
@@ -292,17 +326,17 @@
             <div class="pricing-tiers">
               <div class="pricing-tier">
                 <h5>Basic</h5>
-                <p class="price">$20,000 - $50,000</p>
+                <p class="price">₹15,00,000 - ₹37,50,000</p>
                 <p>Simple custom solution, limited features</p>
               </div>
               <div class="pricing-tier">
                 <h5>Advanced</h5>
-                <p class="price">$50,000 - $100,000</p>
+                <p class="price">₹37,50,000 - ₹75,00,000</p>
                 <p>Complex solution, advanced integrations</p>
               </div>
               <div class="pricing-tier">
                 <h5>Enterprise</h5>
-                <p class="price">$100,000+</p>
+                <p class="price">₹75,00,000+</p>
                 <p>Enterprise-grade solution, full customization</p>
               </div>
             </div>
@@ -313,14 +347,13 @@
           </div>
         </div>
       </div>
+      </div>
       
-      <div class="service-details mt-5 pt-5 reveal" id="maintenance-details">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="assets/images/service-maintenance.svg" alt="Digital Product Maintenance" class="service-img">
-          </div>
-          <div class="col-lg-6">
-            <h2>Maintenance & Support</h2>
+      <div class="service-section" style="background-color: rgba(128, 128, 128, 0.45); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div class="service-details reveal" id="maintenance-details">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="font-cute">Maintenance & Support</h2>
             <p class="mb-4">We provide ongoing maintenance and support services for all digital products to ensure they remain secure, up-to-date, and performing optimally at all times.</p>
             
             <h4 class="mb-3">What's Included:</h4>
@@ -343,17 +376,17 @@
             <div class="pricing-tiers">
               <div class="pricing-tier">
                 <h5>Basic</h5>
-                <p class="price">$149/month</p>
+                <p class="price">₹11,175/month</p>
                 <p>Essential maintenance and updates</p>
               </div>
               <div class="pricing-tier">
                 <h5>Standard</h5>
-                <p class="price">$299/month</p>
+                <p class="price">₹22,425/month</p>
                 <p>Regular updates, support, and monitoring</p>
               </div>
               <div class="pricing-tier">
                 <h5>Premium</h5>
-                <p class="price">$499/month</p>
+                <p class="price">₹37,425/month</p>
                 <p>Priority support, feature updates, analytics</p>
               </div>
             </div>
@@ -363,6 +396,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   </section>
@@ -466,4 +500,3 @@
   <script src="js/floating-quote.js"></script>
 </body>
 </html>
-
