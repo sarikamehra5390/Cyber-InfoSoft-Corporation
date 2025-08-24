@@ -33,10 +33,38 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Rakkas&family=Style+Script&family=Bangers&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/templates.css">
+  
+  <style>
+    .font-display { 
+      font-family: 'Style Script', cursive; 
+    }
+    .font-handwriting { 
+      font-family: 'Noto Sans Mono', monospace; 
+    }
+    .font-title { 
+      font-family: 'Rakkas', serif; 
+    }
+    .font-cute { 
+      font-family: 'Bangers', cursive; 
+      font-weight: 400; 
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+    }
+    
+    .section-header h2 {
+      font-family: 'Bangers', cursive;
+      font-weight: 400;
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+      font-size: 2.5rem;
+    }
+  </style>
   
   <!-- Prevent Flash of Incorrect Theme -->
   <script>
@@ -51,7 +79,7 @@
     })();
   </script>
 </head>
-<body>
+<body class="app-templates">
   <!-- Particles Background -->
   <div id="particles-js" class="particles-container"></div>
   
@@ -118,8 +146,8 @@
   <section class="section">
     <div class="container">
       <div class="section-header text-center reveal">
-        <h2>Our App Templates</h2>
-        <p class="lead">Choose from our selection of mobile and web application templates</p>
+        <h2 class="font-cute">OUR APP TEMPLATES</h2>
+        <p class="lead font-handwriting">Choose from our selection of mobile and web application templates</p>
       </div>
 
       <div class="templates-grid">
@@ -137,6 +165,8 @@
             <div class="template-meta">
               <span class="template-category">Mobile & Web</span>
               <span class="template-price">$1,499</span>
+            </div>
+          </div>
         </div>
 
         <!-- Template 2 -->
@@ -153,6 +183,8 @@
             <div class="template-meta">
               <span class="template-category">Mobile & Web</span>
               <span class="template-price">$1,299</span>
+            </div>
+          </div>
         </div>
 
         <!-- Template 3 -->
@@ -169,8 +201,10 @@
             <div class="template-meta">
               <span class="template-category">Mobile</span>
               <span class="template-price">$999</span>
+            </div>
+          </div>
         </div>
-
+        
         <!-- Template 4 -->
         <div class="template-card reveal">
           <div class="template-thumbnail">
@@ -181,50 +215,20 @@
           </div>
           <div class="template-info">
             <h3>Food Delivery App</h3>
-            <p>A complete food ordering and delivery platform with restaurant listings and real-time tracking.</p>
-            <div class="template-meta">
-              <span class="template-category">Mobile</span>
-              <span class="template-price">$1,199</span>
-        </div>
-
-        <!-- Template 5 -->
-        <div class="template-card reveal">
-          <div class="template-thumbnail">
-            <img src="assets/images/portfolio-5.svg" alt="Task Management App Template">
-            <div class="template-overlay">
-              <a href="#" class="btn btn-primary">Live Demo</a>
-            </div>
-          </div>
-          <div class="template-info">
-            <h3>Task Management</h3>
-            <p>A productivity app with task lists, reminders, project management, and team collaboration.</p>
+            <p>A complete food ordering and delivery platform with restaurant listings, menus, and real-time tracking.</p>
             <div class="template-meta">
               <span class="template-category">Mobile & Web</span>
-              <span class="template-price">$899</span>
-        </div>
-
-        <!-- Template 6 -->
-        <div class="template-card reveal">
-          <div class="template-thumbnail">
-            <img src="assets/images/portfolio-6.svg" alt="Travel Booking App Template">
-            <div class="template-overlay">
-              <a href="#" class="btn btn-primary">Live Demo</a>
+              <span class="template-price">$1,599</span>
             </div>
           </div>
-          <div class="template-info">
-            <h3>Travel Booking</h3>
-            <p>A travel app with flight and hotel booking, itinerary planning, and travel recommendations.</p>
-            <div class="template-meta">
-              <span class="template-category">Mobile & Web</span>
-              <span class="template-price">$1,399</span>
         </div>
       </div>
 
       <!-- Add Template Form -->
       <div class="add-template-section reveal">
         <div class="section-header text-center">
-          <h2>Submit Your App</h2>
-          <p class="lead">Have an app you'd like to showcase? Submit your project details below!</p>
+          <h2 class="font-cute">SUBMIT YOUR APP</h2>
+          <p class="lead font-handwriting">Have an app you'd like to showcase? Submit your project details below!</p>
         </div>
         
         <form class="add-template-form">
@@ -299,8 +303,8 @@
   <section class="section cta-section">
     <div class="container">
       <div class="cta-content text-center reveal">
-        <h2>Need a Custom App?</h2>
-        <p class="lead">Our team of expert developers can build a custom app tailored to your specific requirements.</p>
+        <h2 class="font-cute">NEED A CUSTOM APP?</h2>
+        <p class="lead font-handwriting">Our team of expert developers can build a custom app tailored to your specific requirements.</p>
         <div class="cta-buttons">
           <a href="contact.html" class="btn btn-primary">Contact Us</a>
           <a href="quote.html" class="btn btn-outline">Get a Quote</a>
