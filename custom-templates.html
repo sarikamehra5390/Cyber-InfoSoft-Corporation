@@ -33,10 +33,38 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Rakkas&family=Style+Script&family=Bangers&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/templates.css">
+  
+  <style>
+    .font-display { 
+      font-family: 'Style Script', cursive; 
+    }
+    .font-handwriting { 
+      font-family: 'Noto Sans Mono', monospace; 
+    }
+    .font-title { 
+      font-family: 'Rakkas', serif; 
+    }
+    .font-cute { 
+      font-family: 'Bangers', cursive; 
+      font-weight: 400; 
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+    }
+    
+    .section-header h2 {
+      font-family: 'Bangers', cursive;
+      font-weight: 400;
+      letter-spacing: 1px;
+      transform: scaleY(0.9);
+      font-size: 2.5rem;
+    }
+  </style>
   
   <!-- Prevent Flash of Incorrect Theme -->
   <script>
@@ -51,7 +79,7 @@
     })();
   </script>
 </head>
-<body>
+<body class="custom-templates">
   <!-- Particles Background -->
   <div id="particles-js" class="particles-container"></div>
   
@@ -118,8 +146,8 @@
   <section class="section">
     <div class="container">
       <div class="section-header text-center reveal">
-        <h2>Our Custom Solution Templates</h2>
-        <p class="lead">Choose from our selection of specialized solutions for unique business needs</p>
+        <h2 class="font-cute">OUR CUSTOM SOLUTION TEMPLATES</h2>
+        <p class="lead font-handwriting">Choose from our selection of specialized solutions for unique business needs</p>
       </div>
 
       <div class="templates-grid">
@@ -137,6 +165,8 @@
             <div class="template-meta">
               <span class="template-category">Business</span>
               <span class="template-price">$1,299</span>
+            </div>
+          </div>
         </div>
 
         <!-- Template 2 -->
@@ -153,46 +183,52 @@
             <div class="template-meta">
               <span class="template-category">Business</span>
               <span class="template-price">$999</span>
+            </div>
+          </div>
         </div>
 
         <!-- Template 3 -->
         <div class="template-card reveal">
           <div class="template-thumbnail">
-            <img src="assets/images/portfolio-3.svg" alt="Learning Management System Template">
+            <img src="assets/images/portfolio-3.svg" alt="Healthcare Management System Template">
             <div class="template-overlay">
               <a href="#" class="btn btn-primary">Live Demo</a>
             </div>
           </div>
           <div class="template-info">
-            <h3>Learning Management System</h3>
-            <p>A complete LMS for educational institutions and corporate training programs.</p>
+            <h3>Healthcare Management System</h3>
+            <p>A complete solution for hospitals and clinics with patient records, appointment scheduling, and billing.</p>
             <div class="template-meta">
-              <span class="template-category">Education</span>
-              <span class="template-price">$1,499</span>
+              <span class="template-category">Healthcare</span>
+              <span class="template-price">$5,999</span>
+            </div>
+          </div>
         </div>
-
+        
         <!-- Template 4 -->
         <div class="template-card reveal">
           <div class="template-thumbnail">
-            <img src="assets/images/portfolio-4.svg" alt="Healthcare Management Template">
+            <img src="assets/images/portfolio-4.svg" alt="Real Estate Management System Template">
             <div class="template-overlay">
               <a href="#" class="btn btn-primary">Live Demo</a>
             </div>
           </div>
           <div class="template-info">
-            <h3>Healthcare Management</h3>
-            <p>A specialized system for healthcare providers to manage patients and appointments.</p>
+            <h3>Real Estate Management System</h3>
+            <p>A property management solution with listings, client management, and transaction tracking.</p>
             <div class="template-meta">
-              <span class="template-category">Healthcare</span>
-              <span class="template-price">$1,799</span>
+              <span class="template-category">Real Estate</span>
+              <span class="template-price">$4,499</span>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Add Template Form -->
       <div class="add-template-section reveal">
         <div class="section-header text-center">
-          <h2>Request a Custom Solution</h2>
-          <p class="lead">Need a specialized solution for your business? Tell us about your requirements!</p>
+          <h2 class="font-cute">REQUEST A CUSTOM SOLUTION</h2>
+          <p class="lead font-handwriting">Need a specialized solution for your business? Tell us about your requirements!</p>
         </div>
         
         <form class="add-template-form">
@@ -261,8 +297,8 @@
   <section class="section cta-section">
     <div class="container">
       <div class="cta-content text-center reveal">
-        <h2>Need a Completely Custom Solution?</h2>
-        <p class="lead">Our team of experts can build a solution tailored specifically to your business needs.</p>
+        <h2 class="font-cute">NEED A COMPLETELY CUSTOM SOLUTION?</h2>
+        <p class="lead font-handwriting">Our team of experts can build a solution tailored specifically to your business needs.</p>
         <div class="cta-buttons">
           <a href="contact.html" class="btn btn-primary">Contact Us</a>
           <a href="quote.html" class="btn btn-outline">Get a Quote</a>
