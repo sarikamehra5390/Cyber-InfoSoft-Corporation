@@ -1,0 +1,466 @@
+/* Templates Grid Layout */
+.templates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Website Templates - 6 divs with 3 per row (2 rows) */
+.website-templates .templates-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.website-templates .templates-grid .template-card:nth-child(n+7) {
+  display: none; /* Hide extra cards beyond 6 */
+}
+
+/* Other Template Pages - 4 divs with 2 per row (2 rows) */
+.app-templates .templates-grid,
+.game-templates .templates-grid,
+.custom-templates .templates-grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-templates .templates-grid .template-card:nth-child(n+5),
+.game-templates .templates-grid .template-card:nth-child(n+5),
+.custom-templates .templates-grid .template-card:nth-child(n+5) {
+  display: none; /* Hide extra cards beyond 4 */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .templates-grid,
+  .website-templates .templates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Maintain 2x2 grid for medium screens */
+  .app-templates .templates-grid,
+  .game-templates .templates-grid,
+  .custom-templates .templates-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust spacing for smaller screens */
+  .app-templates .templates-grid,
+  .game-templates .templates-grid,
+  .custom-templates .templates-grid {
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 576px) {
+  .templates-grid,
+  .website-templates .templates-grid,
+  .app-templates .templates-grid,
+  .game-templates .templates-grid,
+  .custom-templates .templates-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+/* Template Card Styling */
+.template-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: var(--card-bg);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure equal height for 2x2 grid cards */
+.app-templates .template-card,
+.game-templates .template-card,
+.custom-templates .template-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.app-templates .template-card:hover,
+.game-templates .template-card:hover,
+.custom-templates .template-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(var(--primary-rgb), 0.2);
+}
+
+/* Adjust thumbnail aspect ratio for 2x2 grid */
+.app-templates .template-thumbnail,
+.game-templates .template-thumbnail,
+.custom-templates .template-thumbnail {
+  padding-top: 65%; /* Slightly taller aspect ratio */
+}
+
+.template-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(var(--primary-rgb), 0.15);
+}
+
+.template-thumbnail {
+  position: relative;
+  overflow: hidden;
+  padding-top: 60%; /* Aspect ratio */
+}
+
+.template-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.template-card:hover .template-thumbnail img {
+  transform: scale(1.05);
+}
+
+.template-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Enhanced overlay for 2x2 grid */
+.app-templates .template-overlay,
+.game-templates .template-overlay,
+.custom-templates .template-overlay {
+  background-color: rgba(var(--primary-rgb), 0.85);
+  backdrop-filter: blur(3px);
+}
+
+.template-card:hover .template-overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Enhanced button styling for 2x2 grid */
+.app-templates .template-overlay .btn,
+.game-templates .template-overlay .btn,
+.custom-templates .template-overlay .btn {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transform: translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
+}
+
+.app-templates .template-card:hover .template-overlay .btn,
+.game-templates .template-card:hover .template-overlay .btn,
+.custom-templates .template-card:hover .template-overlay .btn {
+  transform: translateY(0);
+}
+
+/* Enhanced Button Styling for Template Pages */
+.template-overlay .btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.3);
+}
+
+.template-card:hover .template-overlay .btn-primary {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.template-overlay .btn-primary:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 8px 25px rgba(var(--primary-rgb), 0.4);
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+}
+
+.template-overlay .btn-primary:active {
+  transform: scale(0.95) translateY(0);
+  box-shadow: 0 2px 10px rgba(var(--primary-rgb), 0.3);
+}
+
+.template-overlay .btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  transform: translateY(-100%);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.template-overlay .btn-primary:hover::before {
+  transform: translateY(0);
+}
+
+.template-info {
+  padding: var(--spacing-md);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.template-info h3 {
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+}
+
+.template-info p {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-light);
+  flex-grow: 1;
+}
+
+/* Enhanced styling for 2x2 grid template info */
+.app-templates .template-info,
+.game-templates .template-info,
+.custom-templates .template-info {
+  padding: var(--spacing-lg);
+}
+
+.app-templates .template-info h3,
+.game-templates .template-info h3,
+.custom-templates .template-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.app-templates .template-info p,
+.game-templates .template-info p,
+.custom-templates .template-info p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.template-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+/* Enhanced Contact Us Button */
+.section a.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.section a.btn-primary:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.3);
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+}
+
+.section a.btn-primary:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 2px 8px rgba(var(--primary-rgb), 0.2);
+}
+
+.section a.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%, -50%);
+  transform-origin: 50% 50%;
+}
+
+.section a.btn-primary:hover::after {
+  animation: ripple 1s ease-out;
+}
+
+.template-category {
+  font-size: 0.875rem;
+  color: var(--text-lighter);
+}
+
+.template-price {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Add Template Form Styling */
+.add-template-section {
+  margin-top: var(--spacing-xxl);
+  padding: var(--spacing-xl);
+  background-color: var(--bg-light);
+  border-radius: var(--border-radius);
+}
+
+.add-template-form {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: var(--spacing-lg);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group small {
+  display: block;
+  margin-top: var(--spacing-xs);
+  color: var(--text-lighter);
+  font-size: 0.875rem;
+}
+
+/* Enhanced Form Submit Button */
+.add-template-form .btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.add-template-form .btn-primary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.3);
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+}
+
+.add-template-form .btn-primary:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 2px 8px rgba(var(--primary-rgb), 0.2);
+}
+
+.add-template-form .btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.2), rgba(255,255,255,0));
+  transition: left 0.7s ease;
+}
+
+.add-template-form .btn-primary:hover::before {
+  left: 100%;
+}
+
+/* Footer Layout Improvements */
+.footer .container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-widget {
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Services and Quick Links side by side on desktop */
+.footer .services-widget,
+.footer .quick-links-widget {
+  width: 50%;
+  padding-right: var(--spacing-md);
+  box-sizing: border-box;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .templates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .templates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Stack services and quick links on mobile */
+  .footer .services-widget,
+  .footer .quick-links-widget {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+/* Website Templates Page - 6 divs with 2 per row */
+.website-templates .templates-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Other Template Pages - 4 divs with 2 per row */
+.app-templates .templates-grid,
+.game-templates .templates-grid,
+.custom-templates .templates-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
