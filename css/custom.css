@@ -365,11 +365,70 @@ section.section + .portfolio-category {
   border-radius: 3px;
 }
 
+/* Fix for contact page alignment */
 .contact-info {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+.contact-info-items {
+  margin-top: 1.5rem;
+}
+
+.contact-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Fix for map section to span full width */
+.map-section .container-fluid {
+  max-width: 100%;
+  padding: 0;
+}
+
+.map-section .section-header {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.map-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 0;
+  height: 500px;
+}
+
+.map-container.glassmorphism {
+  border-radius: 0;
+}
+
+.google-map {
+  height: 100%;
+  width: 100%;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/* Ensure proper responsive behavior */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-info-wrapper {
+    margin-top: 2rem;
+  }
 }
 
 .contact-info-item {
